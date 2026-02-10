@@ -1,14 +1,14 @@
 export const DIFFICULTIES = {
   easy: {
-    label: "Easy",
-    partyHP: 70
+    maxDays: 7,
+    partyHP: 60
   },
   normal: {
-    label: "Normal",
-    partyHP: 50
+    maxDays: 6,
+    partyHP: 60
   },
   hard: {
-    label: "Hard",
-    partyHP: 30
+    maxDays: 5,
+    partyHP: 60
   }
 };
