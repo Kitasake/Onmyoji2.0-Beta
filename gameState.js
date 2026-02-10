@@ -5,47 +5,91 @@ import { createPlayers } from "./logic/playerState.js";
 import { BASE_RULES } from "./logic/rulesets.js";
 
 export const gameState = {
-  round: 1,
-  maxRounds: 4,
+  // CAMPAIGN
+  day: 1,
+  maxDays: 7, // set by difficulty
+  isFinalDay: false,
 
-  partyHP: 80,
-  maxPartyHP: 80,
+  // DAY FLOW
+  encounter: 1,          // 1–4 (or 1–3 on final day)
+  maxEncounters: 4,
+  timeOfDay: "Dawn",     // Dawn / Afternoon / Dusk / Night
 
+  // PARTY
+  partyHP: 60,
+  maxPartyHP: 60,
+
+  // RESOURCES
+  resources: {
+    Fire: 0,
+    Ice: 0,
+    Lightning: 0,
+    Wind: 0,
+    Skin: 0
+  },
+
+  // BUFFS (from guardians)
+  buffs: {
+    attackBonus: 0,
+    defenseBonus: 0,
+    disableDefenseNegation: false
+  },
+
+  // COMBAT
   players: [],
   currentYokai: null,
 
   spellHands: {},
   selectedSpells: {},
 
-  // Used by some UI modules
   lastCombatResult: null,
-  rules: {}
+  rules: {},
+
+  gameOver: false,
+  victory: false
 };
+
 
 /**
  * Initializes a new game
  * @param {number} playerCount
  */
 export function initGame(playerCount = 4, options = {}) {
-  const { partyHP = 80, rules = BASE_RULES } = options;
-  gameState.round = 1;
-  gameState.players = createPlayers(playerCount);
-  gameState.currentYokai = null;
+  const { partyHP = 60, rules = BASE_RULES, maxDays = 7 } = options;
 
-  gameState.rules = {
-    ...BASE_RULES,
-    ...rules
-  };
-  gameState.maxPartyHP = partyHP;
+  gameState.day = 1;
+  gameState.maxDays = maxDays;
+  gameState.isFinalDay = false;
+
+  gameState.encounter = 1;
+  gameState.maxEncounters = 4;
+  gameState.timeOfDay = "Dawn";
+
   gameState.partyHP = partyHP;
+  gameState.maxPartyHP = partyHP;
 
-  // MUST be an object, not an array
+  gameState.resources = {
+    Fire: 0, Ice: 0, Lightning: 0, Wind: 0, Skin: 0
+  };
+
+  gameState.buffs = {
+    attackBonus: 0,
+    defenseBonus: 0,
+    disableDefenseNegation: false
+  };
+
+  gameState.players = createPlayers(playerCount);
   gameState.spellHands = {};
   gameState.selectedSpells = {};
+  gameState.currentYokai = null;
+
+  gameState.rules = { ...BASE_RULES, ...rules };
+
   gameState.lastCombatResult = null;
   gameState.gameOver = false;
   gameState.victory = false;
 }
+
 
 
 /**
