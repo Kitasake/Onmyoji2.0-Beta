@@ -3,6 +3,7 @@
 
 import { createPlayers } from "./logic/playerState.js";
 import { BASE_RULES } from "./logic/rulesets.js";
+import { buildRewardDeck } from "./logic/rewardDeck.js";
 
 export const gameState = {
   // CAMPAIGN
@@ -34,6 +35,10 @@ export const gameState = {
     defenseBonus: 0,
     disableDefenseNegation: false
   },
+
+  rewardDeck: [],
+  rewardDiscard: [],
+  pendingReward: null,
 
   // COMBAT
   players: [],
@@ -85,6 +90,11 @@ export function initGame(playerCount = 4, options = {}) {
 
   gameState.rules = { ...BASE_RULES, ...rules };
 
+  gameState.rewardDeck = buildRewardDeck();
+  gameState.rewardDiscard = [];
+  gameState.pendingReward = null;
+
+
   gameState.lastCombatResult = null;
   gameState.gameOver = false;
   gameState.victory = false;
@@ -111,5 +121,20 @@ export function resolvePartyDamage(damage) {
   }
 
   return gameState.partyHP === 0;
+}
+
+/**
+ * Draws a single reward card after a Yokai is defeated
+ */
+export function drawRewardCard() {
+  if (gameState.rewardDeck.length === 0) {
+    console.warn("Reward deck is empty");
+    return null;
+  }
+
+  const card = gameState.rewardDeck.shift();
+  gameState.pendingReward = card;
+
+  return card;
 }
 
