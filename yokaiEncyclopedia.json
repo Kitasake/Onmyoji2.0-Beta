@@ -1,0 +1,579 @@
+[
+  {
+"name": "Red Oni",
+"element": "Fire",
+"hp": { "r1": 47, "r2": 51, "r3": 56, "r4": 63 },
+"season": "Summer",
+"area": "Mountain",
+"weather": "Sunny"
+},
+
+{
+"name": "Blue Oni",
+"element": "Ice",
+"hp": { "r1": 44, "r2": 47, "r3": 54, "r4": 59 },
+"season": "Winter",
+"area": "Mountain",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Oni",
+"element": "Lightning",
+"hp": { "r1": 45, "r2": 46, "r3": 53, "r4": 62 },
+"season": "Fall",
+"area": "Mountain",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Oni",
+"element": "Wind",
+"hp": { "r1": 44, "r2": 51, "r3": 51, "r4": 61 },
+"season": "Spring",
+"area": "Mountain",
+"weather": "Rainy"
+},
+
+{
+"name": "Red Kappa",
+"element": "Fire",
+"hp": { "r1": 44, "r2": 46, "r3": 56, "r4": 63 },
+"season": "Winter",
+"area": "Lake",
+"weather": "Rainy"
+},
+
+{
+"name": "Blue Kappa",
+"element": "Ice",
+"hp": { "r1": 43, "r2": 47, "r3": 52, "r4": 59 },
+"season": "Summer",
+"area": "Lake",
+"weather": "Windy"
+},
+
+{
+"name": "Yellow Kappa",
+"element": "Lightning",
+"hp": { "r1": 45, "r2": 50, "r3": 55, "r4": 61 },
+"season": "Spring",
+"area": "Lake",
+"weather": "Windy"
+},
+
+{
+"name": "Green Kappa",
+"element": "Wind",
+"hp": { "r1": 46, "r2": 48, "r3": 53, "r4": 58 },
+"season": "Fall",
+"area": "Lake",
+"weather": "Snowy"
+},
+
+{
+"name": "Red Tsuchiguma",
+"element": "Fire",
+"hp": { "r1": 42, "r2": 46, "r3": 51, "r4": 58 },
+"season": "Fall",
+"area": "Forest",
+"weather": "Snowy"
+},
+
+{
+"name": "Blue Tsuchiguma",
+"element": "Ice",
+"hp": { "r1": 45, "r2": 47, "r3": 52, "r4": 61 },
+"season": "Spring",
+"area": "Forest",
+"weather": "Rainy"
+},
+
+{
+"name": "Yellow Tsuchiguma",
+"element": "Lightning",
+"hp": { "r1": 47, "r2": 51, "r3": 54, "r4": 61 },
+"season": "Winter",
+"area": "Forest",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Tsuchiguma",
+"element": "Wind",
+"hp": { "r1": 45, "r2": 46, "r3": 52, "r4": 59 },
+"season": "Summer",
+"area": "Forest",
+"weather": "Sunny"
+},
+
+{
+"name": "Red Itachi",
+"element": "Fire",
+"hp": { "r1": 43, "r2": 50, "r3": 53, "r4": 58 },
+"season": "Summer",
+"area": "Forest",
+"weather": "Rainy"
+},
+
+{
+"name": "Blue Itachi",
+"element": "Ice",
+"hp": { "r1": 47, "r2": 49, "r3": 53, "r4": 63 },
+"season": "Spring",
+"area": "Forest",
+"weather": "Windy"
+},
+
+{
+"name": "Yellow Itachi",
+"element": "Lightning",
+"hp": { "r1": 45, "r2": 51, "r3": 53, "r4": 62 },
+"season": "Fall",
+"area": "Forest",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Itachi",
+"element": "Wind",
+"hp": { "r1": 47, "r2": 49, "r3": 55, "r4": 63 },
+"season": "Winter",
+"area": "Forest",
+"weather": "Windy"
+},
+
+{
+"name": "Red Yuki Onna",
+"element": "Fire",
+"hp": { "r1": 44, "r2": 51, "r3": 56, "r4": 58 },
+"season": "Summer",
+"area": "Lake",
+"weather": "Snowy"
+},
+
+{
+"name": "Blue Yuki Onna",
+"element": "Ice",
+"hp": { "r1": 46, "r2": 50, "r3": 55, "r4": 62 },
+"season": "Winter",
+"area": "Lake",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Yuki Onna",
+"element": "Lightning",
+"hp": { "r1": 42, "r2": 48, "r3": 51, "r4": 59 },
+"season": "Fall",
+"area": "Lake",
+"weather": "Rainy"
+},
+
+{
+"name": "Green Yuki Onna",
+"element": "Wind",
+"hp": { "r1": 42, "r2": 47, "r3": 51, "r4": 59 },
+"season": "Spring",
+"area": "Lake",
+"weather": "Rainy"
+},
+
+{
+"name": "Red Tengu",
+"element": "Fire",
+"hp": { "r1": 44, "r2": 48, "r3": 53, "r4": 60 },
+"season": "Winter",
+"area": "Mountain",
+"weather": "Windy"
+},
+
+{
+"name": "Blue Tengu",
+"element": "Ice",
+"hp": { "r1": 47, "r2": 51, "r3": 53, "r4": 61 },
+"season": "Spring",
+"area": "Mountain",
+"weather": "Windy"
+},
+
+{
+"name": "Yellow Tengu",
+"element": "Lightning",
+"hp": { "r1": 46, "r2": 48, "r3": 52, "r4": 62 },
+"season": "Summer",
+"area": "Mountain",
+"weather": "Windy"
+},
+
+{
+"name": "Green Tengu",
+"element": "Wind",
+"hp": { "r1": 45, "r2": 49, "r3": 54, "r4": 63 },
+"season": "Fall",
+"area": "Mountain",
+"weather": "Snowy"
+},
+
+{
+"name": "Red Bakaneko",
+"element": "Fire",
+"hp": { "r1": 44, "r2": 48, "r3": 53, "r4": 60 },
+"season": "Summer",
+"area": "River",
+"weather": "Windy"
+},
+
+{
+"name": "Blue Bakaneko",
+"element": "Ice",
+"hp": { "r1": 43, "r2": 49, "r3": 53, "r4": 58 },
+"season": "Winter",
+"area": "River",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Bakaneko",
+"element": "Lightning",
+"hp": { "r1": 46, "r2": 50, "r3": 54, "r4": 63 },
+"season": "Spring",
+"area": "River",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Bakaneko",
+"element": "Wind",
+"hp": { "r1": 43, "r2": 48, "r3": 54, "r4": 62 },
+"season": "Fall",
+"area": "River",
+"weather": "Rainy"
+},
+
+{
+"name": "Red Nue",
+"element": "Fire",
+"hp": { "r1": 42, "r2": 47, "r3": 51, "r4": 60 },
+"season": "Spring",
+"area": "Mountain",
+"weather": "Snowy"
+},
+
+{
+"name": "Blue Nue",
+"element": "Ice",
+"hp": { "r1": 43, "r2": 47, "r3": 52, "r4": 59 },
+"season": "Summer",
+"area": "Mountain",
+"weather": "Rainy"
+},
+
+{
+"name": "Yellow Nue",
+"element": "Lightning",
+"hp": { "r1": 46, "r2": 50, "r3": 55, "r4": 62 },
+"season": "Winter",
+"area": "Mountain",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Nue",
+"element": "Wind",
+"hp": { "r1": 43, "r2": 47, "r3": 56, "r4": 62 },
+"season": "Fall",
+"area": "Mountain",
+"weather": "Rainy"
+},
+
+{
+"name": "Red Tanuki",
+"element": "Fire",
+"hp": { "r1": 44, "r2": 49, "r3": 52, "r4": 62 },
+"season": "Winter",
+"area": "Forest",
+"weather": "Rainy"
+},
+
+{
+"name": "Blue Tanuki",
+"element": "Ice",
+"hp": { "r1": 46, "r2": 50, "r3": 56, "r4": 59 },
+"season": "Spring",
+"area": "Forest",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Tanuki",
+"element": "Lightning",
+"hp": { "r1": 45, "r2": 51, "r3": 54, "r4": 63 },
+"season": "Fall",
+"area": "Forest",
+"weather": "Windy"
+},
+
+{
+"name": "Green Tanuki",
+"element": "Wind",
+"hp": { "r1": 43, "r2": 46, "r3": 56, "r4": 60 },
+"season": "Summer",
+"area": "Forest",
+"weather": "Snowy"
+},
+
+{
+"name": "Red Kitsune",
+"element": "Fire",
+"hp": { "r1": 43, "r2": 47, "r3": 53, "r4": 60 },
+"season": "Fall",
+"area": "Lake",
+"weather": "Windy"
+},
+
+{
+"name": "Blue Kitsune",
+"element": "Ice",
+"hp": { "r1": 47, "r2": 50, "r3": 56, "r4": 62 },
+"season": "Spring",
+"area": "Lake",
+"weather": "Sunny"
+},
+
+{
+"name": "Yellow Kitsune",
+"element": "Lightning",
+"hp": { "r1": 46, "r2": 51, "r3": 55, "r4": 63 },
+"season": "Summer",
+"area": "Lake",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Kitsune",
+"element": "Wind",
+"hp": { "r1": 47, "r2": 50, "r3": 56, "r4": 60 },
+"season": "Winter",
+"area": "Lake",
+"weather": "Windy"
+},
+
+{
+"name": "Red Nuraryhon",
+"element": "Fire",
+"hp": { "r1": 45, "r2": 47, "r3": 52, "r4": 61 },
+"season": "Summer",
+"area": "River",
+"weather": "Snowy"
+},
+
+{
+"name": "Blue Nuraryhon",
+"element": "Ice",
+"hp": { "r1": 47, "r2": 50, "r3": 52, "r4": 58 },
+"season": "Winter",
+"area": "River",
+"weather": "Windy"
+},
+
+{
+"name": "Yellow Nuraryhon",
+"element": "Lightning",
+"hp": { "r1": 44, "r2": 49, "r3": 53, "r4": 62 },
+"season": "Fall",
+"area": "River",
+"weather": "Snowy"
+},
+
+{
+"name": "Green Nuraryhon",
+"element": "Wind",
+"hp": { "r1": 42, "r2": 51, "r3": 54, "r4": 61 },
+"season": "Spring",
+"area": "River",
+"weather": "Windy"
+},
+
+{
+"name": "Red Obariyon",
+"element": "Fire",
+"hp": { "r1": 47, "r2": 49, "r3": 54, "r4": 61 },
+"season": "Winter",
+"area": "Mountain",
+"weather": "Rainy"
+},
+
+{
+"name": "Blue Obariyon",
+"element": "Ice",
+"hp": { "r1": 45, "r2": 46, "r3": 56, "r4": 62 },
+"season": "Summer",
+"area": "Mountain",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Obariyon",
+"element": "Lightning",
+"hp": { "r1": 44, "r2": 48, "r3": 55, "r4": 60 },
+"season": "Fall",
+"area": "Mountain",
+"weather": "Windy"
+},
+
+{
+"name": "Green Obariyon",
+"element": "Wind",
+"hp": { "r1": 45, "r2": 50, "r3": 56, "r4": 58 },
+"season": "Spring",
+"area": "Mountain",
+"weather": "Sunny"
+},
+
+{
+"name": "Red Gashadokuro",
+"element": "Fire",
+"hp": { "r1": 43, "r2": 47, "r3": 53, "r4": 63 },
+"season": "Fall",
+"area": "Forest",
+"weather": "Rainy"
+},
+
+{
+"name": "Blue Gashadokuro",
+"element": "Ice",
+"hp": { "r1": 42, "r2": 48, "r3": 55, "r4": 60 },
+"season": "Winter",
+"area": "Forest",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Gashadokuro",
+"element": "Lightning",
+"hp": { "r1": 44, "r2": 48, "r3": 55, "r4": 60 },
+"season": "Spring",
+"area": "Forest",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Gashadokuro",
+"element": "Wind",
+"hp": { "r1": 47, "r2": 46, "r3": 51, "r4": 61 },
+"season": "Summer",
+"area": "Forest",
+"weather": "Windy"
+},
+
+{
+"name": "Red Gyuuki",
+"element": "Fire",
+"hp": { "r1": 47, "r2": 48, "r3": 51, "r4": 62 },
+"season": "Summer",
+"area": "River",
+"weather": "Rainy"
+},
+
+{
+"name": "Blue Gyuuki",
+"element": "Ice",
+"hp": { "r1": 46, "r2": 48, "r3": 54, "r4": 61 },
+"season": "Winter",
+"area": "River",
+"weather": "Sunny"
+},
+
+{
+"name": "Yellow Gyuuki",
+"element": "Lightning",
+"hp": { "r1": 44, "r2": 51, "r3": 54, "r4": 62 },
+"season": "Fall",
+"area": "River",
+"weather": "Windy"
+},
+
+{
+"name": "Green Gyuuki",
+"element": "Wind",
+"hp": { "r1": 47, "r2": 47, "r3": 55, "r4": 60 },
+"season": "Spring",
+"area": "River",
+"weather": "Rainy"
+},
+
+{
+"name": "Red Omukade",
+"element": "Fire",
+"hp": { "r1": 44, "r2": 50, "r3": 54, "r4": 58 },
+"season": "Winter",
+"area": "Lake",
+"weather": "Sunny"
+},
+
+{
+"name": "Blue Omukade",
+"element": "Ice",
+"hp": { "r1": 47, "r2": 50, "r3": 53, "r4": 61 },
+"season": "Fall",
+"area": "Lake",
+"weather": "Sunny"
+},
+
+{
+"name": "Yellow Omukade",
+"element": "Lightning",
+"hp": { "r1": 42, "r2": 49, "r3": 55, "r4": 61 },
+"season": "Spring",
+"area": "Lake",
+"weather": "Snowy"
+},
+
+{
+"name": "Green Omukade",
+"element": "Wind",
+"hp": { "r1": 46, "r2": 47, "r3": 54, "r4": 60 },
+"season": "Summer",
+"area": "Lake",
+"weather": "Rainy"
+},
+
+{
+"name": "Red Nure Onna",
+"element": "Fire",
+"hp": { "r1": 42, "r2": 49, "r3": 53, "r4": 61 },
+"season": "Fall",
+"area": "River",
+"weather": "Sunny"
+},
+
+{
+"name": "Blue Nure Onna",
+"element": "Ice",
+"hp": { "r1": 47, "r2": 46, "r3": 55, "r4": 59 },
+"season": "Spring",
+"area": "River",
+"weather": "Snowy"
+},
+
+{
+"name": "Yellow Nure Onna",
+"element": "Lightning",
+"hp": { "r1": 45, "r2": 50, "r3": 54, "r4": 60 },
+"season": "Summer",
+"area": "River",
+"weather": "Sunny"
+},
+
+{
+"name": "Green Nure Onna",
+"element": "Wind",
+"hp": { "r1": 44, "r2": 51, "r3": 51, "r4": 63 },
+"season": "Winter",
+"area": "River",
+"weather": "Rainy"
+}
+
+
+]

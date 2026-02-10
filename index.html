@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Onmyoji – Playtest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      
+
+      font-family: system-ui, sans-serif;
+      padding: 16px;
+      background: #f4f4f4;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    button {
+      padding: 10px 16px;
+      margin: 8px 0;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .panel {
+      background: white;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    pre {
+      background: #eee;
+      padding: 8px;
+      overflow-x: auto;
+    }
+
+    .encyclopedia {
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  width: 90%;
+  max-width: 420px;
+  max-height: 80%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  padding: 12px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.encyclopedia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.encyclopedia-entry {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+
+<body>
+<!-- DIFFICULTY SELECT -->
+<div class="panel" id="difficultyPanel">
+  <h2>Select Difficulty</h2>
+
+  <button data-difficulty="easy">Easy</button>
+  <button data-difficulty="normal">Normal</button>
+  <button data-difficulty="hard">Hard</button>
+
+  <hr>
+
+  <h3> Optional Rules</h3>
+  
+  <label>
+  <input type="checkbox" data-rule="elementalDefense" />
+  Element-based Defense Only
+</label>
+<br>
+  
+<label>
+  <input type="checkbox" data-rule="attackResistanceLite" />
+  Attack Resistance (−1 die)
+</label>
+</div>
+
+ <div id="gamePanel" class="hidden"> 
+  <h1>Onmyoji – Playtest</h1>
+
+  <!-- Party HP --> 
+  <div class="panel">
+    <h2>Party HP</h2>
+    <div id="partyHP"></div>
+  </div>
+
+  <!-- ROUND INFO -->
+  <div class="panel">
+    <h2>Round</h2>
+    <div id="roundInfo"></div>
+  </div>
+
+  <!-- CLUES -->
+  <div class="panel">
+    <h2>Clues</h2>
+    <div id="clueInfo"></div>
+  </div>
+
+  <!-- YOKAI ENCYCLOPEDIA TOGGLE -->
+<div class="panel">
+  <button id="toggleEncyclopediaBtn">
+    📖 Yokai Encyclopedia
+  </button>
+</div>
+
+<!-- ENCYCLOPEDIA OVERLAY -->
+<div id="encyclopediaOverlay" class="encyclopedia hidden">
+  <div class="encyclopedia-header">
+    <strong>Yokai Encyclopedia</strong>
+    <button id="closeEncyclopediaBtn">✕</button>
+  </div>
+
+  <div id="encyclopedia-list"></div>
+</div>
+
+  <!-- SPELL SELECTION -->
+  <div class="panel">
+    <h2>Spell Selection</h2>
+    <div id="spellHands"></div>
+    <button id="submitSpellsBtn">Submit Spells</button>
+  </div>
+
+  <!-- COMBAT RESULTS -->
+  <div class="panel">
+  <button id="toggleCombatBtn">⚔️ Combat Results</button>
+</div>
+
+<div id="combatOverlay" class="encyclopedia hidden">
+  <div class="encyclopedia-header">
+    <strong>Combat Results</strong>
+    <button id="closeCombatBtn">✕</button>
+  </div>
+
+  <pre id="combatResults"></pre>
+</div>
+  <div class="panel hidden" id="nextRoundPanel">
+    <button id="nextRoundBtn">Next Round</button>
+</div>
+
+
+  
+ </div>
+  <!-- GAME OVER -->
+  <div class="panel hidden" id="gameOverPanel">
+    <h2 id="gameOverTitle"></h2>
+    <p id="gameOverText"></p>
+    <button id="restartGameBtn">Restart Game</button>
+  </div>
+
+  
+  <!-- MAIN SCRIPT -->
+  <script type="module">
+    
+  
+    import { DIFFICULTIES } from "./logic/difficulty.js";
+    import { startRound, submitSpells } from "./logic/roundFlow.js";
+    import { gameState, initGame } from "./gameState.js";
+    import { RULES } from "./logic/rulesets.js";
+    import { renderEncyclopedia } from "./logic/renderEncyclopedia.js";
+    import { initPlayerEncyclopedia } from "./data/playerEncyclopedia.js";
+
+function collectRules() {
+  const selected = {};
+
+  document
+    .querySelectorAll("[data-rule]:checked")
+    .forEach(input => {
+      Object.assign(selected, RULES[input.dataset.rule]);
+    });
+
+  return selected;
+}
+
+
+    const difficultyPanel = document.getElementById("difficultyPanel");
+    const gamePanel = document.getElementById("gamePanel");
+
+difficultyPanel
+  .querySelectorAll("button")
+  .forEach(btn => {
+    btn.onclick = async () => {
+      const key = btn.dataset.difficulty;
+      const difficulty = DIFFICULTIES[key];
+
+      difficultyPanel.classList.add("hidden");
+      gamePanel.classList.remove("hidden");
+
+      initGame(4, {
+        partyHP: difficulty.partyHP,
+        rules: collectRules()
+      });
+
+  await initPlayerEncyclopedia();   
+  await startRound();
+  renderRound();
+  await renderEncyclopedia();      
+ };
+});
+
+    
+    const roundInfo = document.getElementById("roundInfo");
+    const clueInfo = document.getElementById("clueInfo");
+    const submitBtn = document.getElementById("submitSpellsBtn");
+    const combatResults = document.getElementById("combatResults");
+    const nextRoundBtn = document.getElementById("nextRoundBtn");
+
+    
+  /**  (async function bootGame() {
+      initGame(4);
+      await startRound();
+      renderRound();
+    })();
+**/
+
+
+    const toggleBtn = document.getElementById("toggleEncyclopediaBtn");
+    const closeBtn = document.getElementById("closeEncyclopediaBtn");
+    const overlay = document.getElementById("encyclopediaOverlay");
+    const combatOverlay = document.getElementById("combatOverlay");
+    const toggleCombatBtn = document.getElementById("toggleCombatBtn");
+    const closeCombatBtn = document.getElementById("closeCombatBtn");
+
+    toggleCombatBtn.onclick = () => {
+      combatOverlay.classList.toggle("hidden");
+    };
+
+    closeCombatBtn.onclick = () => {
+      combatOverlay.classList.add("hidden");
+    };
+
+
+    toggleBtn.onclick = async () => {
+      overlay.classList.toggle("hidden");
+      await renderEncyclopedia();
+    };
+
+    closeBtn.onclick = () => {
+      overlay.classList.add("hidden");
+    };
+
+    submitBtn.onclick = async () => {
+  const submittedSpells = [];
+
+  Object.entries(gameState.spellHands).forEach(
+    ([playerId, handState]) => {
+  playerId = Number(playerId);
+
+
+      const selectedIndexes = gameState.selectedSpells[playerId] || [];
+
+if (selectedIndexes.length === 0) return;
+
+
+      // Collect spells
+      selectedIndexes.forEach(index => {
+        submittedSpells.push({
+          playerId,
+          spell: handState.hand[index]
+        });
+      });
+
+      // REMOVE spells from hand (descending index!)
+      selectedIndexes
+        .sort((a, b) => b - a)
+        .forEach(i => {
+          const [spell] = handState.hand.splice(i, 1);
+          handState.discard.push(spell);
+        });
+    }
+  );
+
+  submitSpells(submittedSpells);
+  renderPartyHP();
+
+  combatOverlay.classList.remove("hidden");
+  document.getElementById("nextRoundPanel").classList.remove("hidden");
+  combatResults.textContent =
+  gameState.lastCombatResult
+    ? JSON.stringify(gameState.lastCombatResult, null, 2)
+    : "No combat results";
+
+      if (gameState.gameOver) {
+        showGameOverScreen(gameState.victory);
+      }
+      await renderEncyclopedia();
+
+};
+
+
+    
+    nextRoundBtn.onclick = async () => {
+  // Hide the combat overlay
+  combatOverlay.classList.add("hidden");
+  document.getElementById("nextRoundPanel").classList.add("hidden");
+
+  await startRound();
+  renderRound();
+  renderPartyHP();
+};
+
+
+    function renderRound() {
+      roundInfo.textContent = `Round ${gameState.round}`;
+
+      if (!gameState.currentYokai) {
+        clueInfo.textContent = "Yokai not initialized.";
+        return;
+      }
+
+      clueInfo.innerHTML = `
+        Season: ${gameState.currentYokai.season}<br>
+        Area: ${gameState.currentYokai.area}<br>
+        Weather: ${gameState.currentYokai.weather}
+      `;
+
+      renderSpellHands();
+    }
+
+    function renderSpellHands() {
+  const container = document.getElementById("spellHands");
+  container.innerHTML = "";
+
+  Object.entries(gameState.spellHands).forEach(
+    ([playerId, handState]) => {
+      playerId = Number(playerId);
+
+      const selected =
+        gameState.selectedSpells[playerId] ??= [];
+
+      const spellListHTML = handState.hand
+        .map((spell, index) => {
+          const isSelected = selected.includes(index);
+
+          return `
+            <li>
+              <button
+                class="spell-btn"
+                data-player="${playerId}"
+                data-index="${index}"
+                ${isSelected ? "disabled" : ""}
+              >
+                ${spell.name} (${spell.dice})
+              </button>
+            </li>
+          `;
+        })
+        .join("");
+
+      const div = document.createElement("div");
+      div.innerHTML = `
+        <strong>Player ${playerId + 1}</strong>
+        <ul>${spellListHTML}</ul>
+      `;
+
+      container.appendChild(div);
+    }
+  );
+
+  document.querySelectorAll(".spell-btn").forEach(btn => {
+    btn.onclick = () => {
+      const playerId = Number(btn.dataset.player);
+      const index = Number(btn.dataset.index);
+      selectSpell(playerId, index);
+    };
+  });
+}
+
+
+    function selectSpell(playerId, spellIndex) {
+  const selected =
+  gameState.selectedSpells[playerId] ??= [];
+
+  if (selected.length >= 3) return;
+  if (selected.includes(spellIndex)) return;
+
+  selected.push(spellIndex);
+  renderSpellHands();
+}
+
+    function renderPartyHP() {
+  document.getElementById("partyHP").textContent =
+    `${gameState.partyHP} / ${gameState.maxPartyHP}`;
+}
+
+  
+    function showGameOverScreen(victory) {
+  gamePanel.classList.add("hidden");
+
+  const panel = document.getElementById("gameOverPanel");
+  const title = document.getElementById("gameOverTitle");
+  const text = document.getElementById("gameOverText");
+
+  title.textContent = victory
+    ? "Victory – The Yokai have been sealed!"
+    : "Defeat – The Onmyoji have fallen…";
+
+  text.textContent = victory
+    ? "Through teamwork and mastery of the elements, the Yokai have been defeated."
+    : "The Yokai overwhelm the capital. Darkness spreads once more.";
+
+  panel.classList.remove("hidden");
+}
+
+
+   document.getElementById("restartGameBtn").onclick = () => {
+  // Hide game UI
+  gamePanel.classList.add("hidden");
+
+  // Show difficulty selection again
+  difficultyPanel.classList.remove("hidden");
+
+  // Hide overlays/panels
+  document.getElementById("gameOverPanel").classList.add("hidden");
+  document.getElementById("combatOverlay").classList.add("hidden");
+  document.getElementById("encyclopediaOverlay").classList.add("hidden");
+
+  // Optional: clear combat text
+  document.getElementById("combatResults").textContent = "";
+};
+
+
+
+  </script>
+
+</body>
+</html>

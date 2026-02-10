@@ -1,1 +1,2 @@
-# Onmyoji2.0-Beta
+# Onmyoji-Playtest-Alpha
+Onmyoji Game Playtest app
