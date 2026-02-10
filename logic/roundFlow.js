@@ -6,6 +6,20 @@ import { generateSpellHand } from "./spellHand.js";
 import { resolveCombat } from "./combatResolution.js";
 import { revealYokaiInfo} from "../data/playerEncyclopedia.js";
 
+const TIMES = ["Dawn", "Afternoon", "Dusk", "Night"];
+
+export function advanceEncounter() {
+  gameState.encounter++;
+
+  if (gameState.encounter > gameState.maxEncounters) {
+    resolveEndOfDay();
+    return;
+  }
+
+  gameState.timeOfDay = TIMES[gameState.encounter - 1];
+}
+
+
 /**
  * Starts a new round
  */
