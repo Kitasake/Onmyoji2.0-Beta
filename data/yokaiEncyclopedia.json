@@ -2,7 +2,7 @@
   {
 "name": "Red Oni",
 "element": "Fire",
-"hp": { "r1": 47, "r2": 51, "r3": 56, "r4": 63 },
+"hp": { "day1": 47, "day2": 51, "day3": 56, "day4": 63 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Dawn"
@@ -11,7 +11,7 @@
 {
 "name": "Blue Oni",
 "element": "Ice",
-"hp": { "r1": 44, "r2": 47, "r3": 54, "r4": 59 },
+"hp": { "day1": 44, "day2": 47, "day3": 54, "day4": 59 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Dusk"
@@ -20,7 +20,7 @@
 {
 "name": "Yellow Oni",
 "element": "Lightning",
-"hp": { "r1": 45, "r2": 46, "r3": 53, "r4": 62 },
+"hp": { "day1": 45, "day2": 46, "day3": 53, "day4": 62 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Dawn"
@@ -29,7 +29,7 @@
 {
 "name": "Green Oni",
 "element": "Wind",
-"hp": { "r1": 44, "r2": 51, "r3": 51, "r4": 61 },
+"hp": { "day1": 44, "day2": 51, "day3": 51, "day4": 61 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Afternoon"
@@ -38,7 +38,7 @@
 {
 "name": "Red Kappa",
 "element": "Fire",
-"hp": { "r1": 44, "r2": 46, "r3": 56, "r4": 63 },
+"hp": { "day1": 44, "day2": 46, "day3": 56, "day4": 63 },
 "season": "Winter",
 "area": "Lake",
 "time": "Afternoon"
@@ -47,7 +47,7 @@
 {
 "name": "Blue Kappa",
 "element": "Ice",
-"hp": { "r1": 43, "r2": 47, "r3": 52, "r4": 59 },
+"hp": { "day1": 43, "day2": 47, "day3": 52, "day4": 59 },
 "season": "Summer",
 "area": "Lake",
 "time": "Night"
@@ -56,7 +56,7 @@
 {
 "name": "Yellow Kappa",
 "element": "Lightning",
-"hp": { "r1": 45, "r2": 50, "r3": 55, "r4": 61 },
+"hp": { "day1": 45, "day2": 50, "day3": 55, "day4": 61 },
 "season": "Spring",
 "area": "Lake",
 "time": "Night"
@@ -65,7 +65,7 @@
 {
 "name": "Green Kappa",
 "element": "Wind",
-"hp": { "r1": 46, "r2": 48, "r3": 53, "r4": 58 },
+"hp": { "day1": 46, "day2": 48, "day3": 53, "day4": 58 },
 "season": "Fall",
 "area": "Lake",
 "time": "Dusk"
@@ -74,7 +74,7 @@
 {
 "name": "Red Tsuchiguma",
 "element": "Fire",
-"hp": { "r1": 42, "r2": 46, "r3": 51, "r4": 58 },
+"hp": { "day1": 42, "day2": 46, "day3": 51, "day4": 58 },
 "season": "Fall",
 "area": "Forest",
 "time": "Dusk"
@@ -83,7 +83,7 @@
 {
 "name": "Blue Tsuchiguma",
 "element": "Ice",
-"hp": { "r1": 45, "r2": 47, "r3": 52, "r4": 61 },
+"hp": { "day1": 45, "day2": 47, "day3": 52, "day4": 61 },
 "season": "Spring",
 "area": "Forest",
 "time": "Afternoon"
@@ -92,7 +92,7 @@
 {
 "name": "Yellow Tsuchiguma",
 "element": "Lightning",
-"hp": { "r1": 47, "r2": 51, "r3": 54, "r4": 61 },
+"hp": { "day1": 47, "day2": 51, "day3": 54, "day4": 61 },
 "season": "Winter",
 "area": "Forest",
 "time": "Dawn"
@@ -101,7 +101,7 @@
 {
 "name": "Green Tsuchiguma",
 "element": "Wind",
-"hp": { "r1": 45, "r2": 46, "r3": 52, "r4": 59 },
+"hp": { "day1": 45, "day2": 46, "day3": 52, "day4": 59 },
 "season": "Summer",
 "area": "Forest",
 "time": "Dawn"
@@ -110,7 +110,7 @@
 {
 "name": "Red Itachi",
 "element": "Fire",
-"hp": { "r1": 43, "r2": 50, "r3": 53, "r4": 58 },
+"hp": { "day1": 43, "day2": 50, "day3": 53, "day4": 58 },
 "season": "Summer",
 "area": "Forest",
 "time": "Afternoon"
@@ -119,7 +119,7 @@
 {
 "name": "Blue Itachi",
 "element": "Ice",
-"hp": { "r1": 47, "r2": 49, "r3": 53, "r4": 63 },
+"hp": { "day1": 47, "day2": 49, "day3": 53, "day4": 63 },
 "season": "Spring",
 "area": "Forest",
 "time": "Night"
@@ -128,7 +128,7 @@
 {
 "name": "Yellow Itachi",
 "element": "Lightning",
-"hp": { "r1": 45, "r2": 51, "r3": 53, "r4": 62 },
+"hp": { "day1": 45, "day2": 51, "day3": 53, "day4": 62 },
 "season": "Fall",
 "area": "Forest",
 "time": "Dawn"
@@ -137,7 +137,7 @@
 {
 "name": "Green Itachi",
 "element": "Wind",
-"hp": { "r1": 47, "r2": 49, "r3": 55, "r4": 63 },
+"hp": { "day1": 47, "day2": 49, "day3": 55, "day4": 63 },
 "season": "Winter",
 "area": "Forest",
 "time": "Night"
@@ -146,7 +146,7 @@
 {
 "name": "Red Yuki Onna",
 "element": "Fire",
-"hp": { "r1": 44, "r2": 51, "r3": 56, "r4": 58 },
+"hp": { "day1": 44, "day2": 51, "day3": 56, "day4": 58 },
 "season": "Summer",
 "area": "Lake",
 "time": "Dusk"
@@ -155,7 +155,7 @@
 {
 "name": "Blue Yuki Onna",
 "element": "Ice",
-"hp": { "r1": 46, "r2": 50, "r3": 55, "r4": 62 },
+"hp": { "day1": 46, "day2": 50, "day3": 55, "day4": 62 },
 "season": "Winter",
 "area": "Lake",
 "time": "Dusk"
@@ -164,7 +164,7 @@
 {
 "name": "Yellow Yuki Onna",
 "element": "Lightning",
-"hp": { "r1": 42, "r2": 48, "r3": 51, "r4": 59 },
+"hp": { "day1": 42, "day2": 48, "day3": 51, "day4": 59 },
 "season": "Fall",
 "area": "Lake",
 "time": "Afternoon"
@@ -173,7 +173,7 @@
 {
 "name": "Green Yuki Onna",
 "element": "Wind",
-"hp": { "r1": 42, "r2": 47, "r3": 51, "r4": 59 },
+"hp": { "day1": 42, "day2": 47, "day3": 51, "day4": 59 },
 "season": "Spring",
 "area": "Lake",
 "time": "Afternoon"
@@ -182,7 +182,7 @@
 {
 "name": "Red Tengu",
 "element": "Fire",
-"hp": { "r1": 44, "r2": 48, "r3": 53, "r4": 60 },
+"hp": { "day1": 44, "day2": 48, "day3": 53, "day4": 60 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Night"
@@ -191,7 +191,7 @@
 {
 "name": "Blue Tengu",
 "element": "Ice",
-"hp": { "r1": 47, "r2": 51, "r3": 53, "r4": 61 },
+"hp": { "day1": 47, "day2": 51, "day3": 53, "day4": 61 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Night"
@@ -200,7 +200,7 @@
 {
 "name": "Yellow Tengu",
 "element": "Lightning",
-"hp": { "r1": 46, "r2": 48, "r3": 52, "r4": 62 },
+"hp": { "day1": 46, "day2": 48, "day3": 52, "day4": 62 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Night"
@@ -209,7 +209,7 @@
 {
 "name": "Green Tengu",
 "element": "Wind",
-"hp": { "r1": 45, "r2": 49, "r3": 54, "r4": 63 },
+"hp": { "day1": 45, "day2": 49, "day3": 54, "day4": 63 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Dusk"
@@ -218,7 +218,7 @@
 {
 "name": "Red Bakaneko",
 "element": "Fire",
-"hp": { "r1": 44, "r2": 48, "r3": 53, "r4": 60 },
+"hp": { "day1": 44, "day2": 48, "day3": 53, "day4": 60 },
 "season": "Summer",
 "area": "River",
 "time": "Night"
@@ -227,7 +227,7 @@
 {
 "name": "Blue Bakaneko",
 "element": "Ice",
-"hp": { "r1": 43, "r2": 49, "r3": 53, "r4": 58 },
+"hp": { "day1": 43, "day2": 49, "day3": 53, "day4": 58 },
 "season": "Winter",
 "area": "River",
 "time": "Dusk"
@@ -236,7 +236,7 @@
 {
 "name": "Yellow Bakaneko",
 "element": "Lightning",
-"hp": { "r1": 46, "r2": 50, "r3": 54, "r4": 63 },
+"hp": { "day1": 46, "day2": 50, "day3": 54, "day4": 63 },
 "season": "Spring",
 "area": "River",
 "time": "Dawn"
@@ -245,7 +245,7 @@
 {
 "name": "Green Bakaneko",
 "element": "Wind",
-"hp": { "r1": 43, "r2": 48, "r3": 54, "r4": 62 },
+"hp": { "day1": 43, "day2": 48, "day3": 54, "day4": 62 },
 "season": "Fall",
 "area": "River",
 "time": "Afternoon"
@@ -254,7 +254,7 @@
 {
 "name": "Red Nue",
 "element": "Fire",
-"hp": { "r1": 42, "r2": 47, "r3": 51, "r4": 60 },
+"hp": { "day1": 42, "day2": 47, "day3": 51, "day4": 60 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Dusk"
@@ -263,7 +263,7 @@
 {
 "name": "Blue Nue",
 "element": "Ice",
-"hp": { "r1": 43, "r2": 47, "r3": 52, "r4": 59 },
+"hp": { "day1": 43, "day2": 47, "day3": 52, "day4": 59 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Afternoon"
@@ -272,7 +272,7 @@
 {
 "name": "Yellow Nue",
 "element": "Lightning",
-"hp": { "r1": 46, "r2": 50, "r3": 55, "r4": 62 },
+"hp": { "day1": 46, "day2": 50, "day3": 55, "day4": 62 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Dawn"
@@ -281,7 +281,7 @@
 {
 "name": "Green Nue",
 "element": "Wind",
-"hp": { "r1": 43, "r2": 47, "r3": 56, "r4": 62 },
+"hp": { "day1": 43, "day2": 47, "day3": 56, "day4": 62 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Afternoon"
@@ -290,7 +290,7 @@
 {
 "name": "Red Tanuki",
 "element": "Fire",
-"hp": { "r1": 44, "r2": 49, "r3": 52, "r4": 62 },
+"hp": { "day1": 44, "day2": 49, "day3": 52, "day4": 62 },
 "season": "Winter",
 "area": "Forest",
 "time": "Afternoon"
@@ -299,7 +299,7 @@
 {
 "name": "Blue Tanuki",
 "element": "Ice",
-"hp": { "r1": 46, "r2": 50, "r3": 56, "r4": 59 },
+"hp": { "day1": 46, "day2": 50, "day3": 56, "day4": 59 },
 "season": "Spring",
 "area": "Forest",
 "time": "Dusk"
@@ -308,7 +308,7 @@
 {
 "name": "Yellow Tanuki",
 "element": "Lightning",
-"hp": { "r1": 45, "r2": 51, "r3": 54, "r4": 63 },
+"hp": { "day1": 45, "day2": 51, "day3": 54, "day4": 63 },
 "season": "Fall",
 "area": "Forest",
 "time": "Night"
@@ -317,7 +317,7 @@
 {
 "name": "Green Tanuki",
 "element": "Wind",
-"hp": { "r1": 43, "r2": 46, "r3": 56, "r4": 60 },
+"hp": { "day1": 43, "day2": 46, "day3": 56, "day4": 60 },
 "season": "Summer",
 "area": "Forest",
 "time": "Dusk"
@@ -326,7 +326,7 @@
 {
 "name": "Red Kitsune",
 "element": "Fire",
-"hp": { "r1": 43, "r2": 47, "r3": 53, "r4": 60 },
+"hp": { "day1": 43, "day2": 47, "day3": 53, "day4": 60 },
 "season": "Fall",
 "area": "Lake",
 "time": "Night"
@@ -335,7 +335,7 @@
 {
 "name": "Blue Kitsune",
 "element": "Ice",
-"hp": { "r1": 47, "r2": 50, "r3": 56, "r4": 62 },
+"hp": { "day1": 47, "day2": 50, "day3": 56, "day4": 62 },
 "season": "Spring",
 "area": "Lake",
 "time": "Dawn"
@@ -344,7 +344,7 @@
 {
 "name": "Yellow Kitsune",
 "element": "Lightning",
-"hp": { "r1": 46, "r2": 51, "r3": 55, "r4": 63 },
+"hp": { "day1": 46, "day2": 51, "day3": 55, "day4": 63 },
 "season": "Summer",
 "area": "Lake",
 "time": "Dawn"
@@ -353,7 +353,7 @@
 {
 "name": "Green Kitsune",
 "element": "Wind",
-"hp": { "r1": 47, "r2": 50, "r3": 56, "r4": 60 },
+"hp": { "day1": 47, "day2": 50, "day3": 56, "day4": 60 },
 "season": "Winter",
 "area": "Lake",
 "time": "Night"
@@ -362,7 +362,7 @@
 {
 "name": "Red Nuraryhon",
 "element": "Fire",
-"hp": { "r1": 45, "r2": 47, "r3": 52, "r4": 61 },
+"hp": { "day1": 45, "day2": 47, "day3": 52, "day4": 61 },
 "season": "Summer",
 "area": "River",
 "time": "Dusk"
@@ -371,7 +371,7 @@
 {
 "name": "Blue Nuraryhon",
 "element": "Ice",
-"hp": { "r1": 47, "r2": 50, "r3": 52, "r4": 58 },
+"hp": { "day1": 47, "day2": 50, "day3": 52, "day4": 58 },
 "season": "Winter",
 "area": "River",
 "time": "Night"
@@ -380,7 +380,7 @@
 {
 "name": "Yellow Nuraryhon",
 "element": "Lightning",
-"hp": { "r1": 44, "r2": 49, "r3": 53, "r4": 62 },
+"hp": { "day1": 44, "day2": 49, "day3": 53, "day4": 62 },
 "season": "Fall",
 "area": "River",
 "time": "Dusk"
@@ -389,7 +389,7 @@
 {
 "name": "Green Nuraryhon",
 "element": "Wind",
-"hp": { "r1": 42, "r2": 51, "r3": 54, "r4": 61 },
+"hp": { "day1": 42, "day2": 51, "day3": 54, "day4": 61 },
 "season": "Spring",
 "area": "River",
 "time": "Night"
@@ -398,7 +398,7 @@
 {
 "name": "Red Obariyon",
 "element": "Fire",
-"hp": { "r1": 47, "r2": 49, "r3": 54, "r4": 61 },
+"hp": { "day1": 47, "day2": 49, "day3": 54, "day4": 61 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Afternoon"
@@ -407,7 +407,7 @@
 {
 "name": "Blue Obariyon",
 "element": "Ice",
-"hp": { "r1": 45, "r2": 46, "r3": 56, "r4": 62 },
+"hp": { "day1": 45, "day2": 46, "day3": 56, "day4": 62 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Dusk"
@@ -416,7 +416,7 @@
 {
 "name": "Yellow Obariyon",
 "element": "Lightning",
-"hp": { "r1": 44, "r2": 48, "r3": 55, "r4": 60 },
+"hp": { "day1": 44, "day2": 48, "day3": 55, "day4": 60 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Night"
@@ -425,7 +425,7 @@
 {
 "name": "Green Obariyon",
 "element": "Wind",
-"hp": { "r1": 45, "r2": 50, "r3": 56, "r4": 58 },
+"hp": { "day1": 45, "day2": 50, "day3": 56, "day4": 58 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Dawn"
@@ -434,7 +434,7 @@
 {
 "name": "Red Gashadokuro",
 "element": "Fire",
-"hp": { "r1": 43, "r2": 47, "r3": 53, "r4": 63 },
+"hp": { "day1": 43, "day2": 47, "day3": 53, "day4": 63 },
 "season": "Fall",
 "area": "Forest",
 "time": "Afternoon"
@@ -443,7 +443,7 @@
 {
 "name": "Blue Gashadokuro",
 "element": "Ice",
-"hp": { "r1": 42, "r2": 48, "r3": 55, "r4": 60 },
+"hp": { "day1": 42, "day2": 48, "day3": 55, "day4": 60 },
 "season": "Winter",
 "area": "Forest",
 "time": "Dusk"
@@ -452,7 +452,7 @@
 {
 "name": "Yellow Gashadokuro",
 "element": "Lightning",
-"hp": { "r1": 44, "r2": 48, "r3": 55, "r4": 60 },
+"hp": { "day1": 44, "day2": 48, "day3": 55, "day4": 60 },
 "season": "Spring",
 "area": "Forest",
 "time": "Dawn"
@@ -461,7 +461,7 @@
 {
 "name": "Green Gashadokuro",
 "element": "Wind",
-"hp": { "r1": 47, "r2": 46, "r3": 51, "r4": 61 },
+"hp": { "day1": 47, "day2": 46, "day3": 51, "day4": 61 },
 "season": "Summer",
 "area": "Forest",
 "time": "Night"
@@ -470,7 +470,7 @@
 {
 "name": "Red Gyuuki",
 "element": "Fire",
-"hp": { "r1": 47, "r2": 48, "r3": 51, "r4": 62 },
+"hp": { "day1": 47, "day2": 48, "day3": 51, "day4": 62 },
 "season": "Summer",
 "area": "River",
 "time": "Afternoon"
@@ -479,7 +479,7 @@
 {
 "name": "Blue Gyuuki",
 "element": "Ice",
-"hp": { "r1": 46, "r2": 48, "r3": 54, "r4": 61 },
+"hp": { "day1": 46, "day2": 48, "day3": 54, "day4": 61 },
 "season": "Winter",
 "area": "River",
 "time": "Dawn"
@@ -488,7 +488,7 @@
 {
 "name": "Yellow Gyuuki",
 "element": "Lightning",
-"hp": { "r1": 44, "r2": 51, "r3": 54, "r4": 62 },
+"hp": { "day1": 44, "day2": 51, "day3": 54, "day4": 62 },
 "season": "Fall",
 "area": "River",
 "time": "Night"
@@ -497,7 +497,7 @@
 {
 "name": "Green Gyuuki",
 "element": "Wind",
-"hp": { "r1": 47, "r2": 47, "r3": 55, "r4": 60 },
+"hp": { "day1": 47, "day2": 47, "day3": 55, "day4": 60 },
 "season": "Spring",
 "area": "River",
 "time": "Afternoon"
@@ -506,7 +506,7 @@
 {
 "name": "Red Omukade",
 "element": "Fire",
-"hp": { "r1": 44, "r2": 50, "r3": 54, "r4": 58 },
+"hp": { "day1": 44, "day2": 50, "day3": 54, "day4": 58 },
 "season": "Winter",
 "area": "Lake",
 "time": "Dawn"
@@ -515,7 +515,7 @@
 {
 "name": "Blue Omukade",
 "element": "Ice",
-"hp": { "r1": 47, "r2": 50, "r3": 53, "r4": 61 },
+"hp": { "day1": 47, "day2": 50, "day3": 53, "day4": 61 },
 "season": "Fall",
 "area": "Lake",
 "time": "Dawn"
@@ -524,7 +524,7 @@
 {
 "name": "Yellow Omukade",
 "element": "Lightning",
-"hp": { "r1": 42, "r2": 49, "r3": 55, "r4": 61 },
+"hp": { "day1": 42, "day2": 49, "day3": 55, "day4": 61 },
 "season": "Spring",
 "area": "Lake",
 "time": "Dusk"
@@ -533,7 +533,7 @@
 {
 "name": "Green Omukade",
 "element": "Wind",
-"hp": { "r1": 46, "r2": 47, "r3": 54, "r4": 60 },
+"hp": { "day1": 46, "day2": 47, "day3": 54, "day4": 60 },
 "season": "Summer",
 "area": "Lake",
 "time": "Afternoon"
@@ -542,7 +542,7 @@
 {
 "name": "Red Nure Onna",
 "element": "Fire",
-"hp": { "r1": 42, "r2": 49, "r3": 53, "r4": 61 },
+"hp": { "day1": 42, "day2": 49, "day3": 53, "day4": 61 },
 "season": "Fall",
 "area": "River",
 "time": "Dawn"
@@ -551,7 +551,7 @@
 {
 "name": "Blue Nure Onna",
 "element": "Ice",
-"hp": { "r1": 47, "r2": 46, "r3": 55, "r4": 59 },
+"hp": { "day1": 47, "day2": 46, "day3": 55, "day4": 59 },
 "season": "Spring",
 "area": "River",
 "time": "Dusk"
@@ -560,7 +560,7 @@
 {
 "name": "Yellow Nure Onna",
 "element": "Lightning",
-"hp": { "r1": 45, "r2": 50, "r3": 54, "r4": 60 },
+"hp": { "day1": 45, "day2": 50, "day3": 54, "day4": 60 },
 "season": "Summer",
 "area": "River",
 "time": "Dawn"
@@ -569,7 +569,7 @@
 {
 "name": "Green Nure Onna",
 "element": "Wind",
-"hp": { "r1": 44, "r2": 51, "r3": 51, "r4": 63 },
+"hp": { "day1": 44, "day2": 51, "day3": 51, "day4": 63 },
 "season": "Winter",
 "area": "River",
 "time": "Afternoon"
