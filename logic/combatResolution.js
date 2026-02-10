@@ -13,6 +13,13 @@ import { gameState } from "../gameState.js";
  * @param {number} roundNumber
  * @returns {Object}
  */
+const attackBonus = gameState.buffs.attackBonus;
+const defenseBonus = gameState.buffs.defenseBonus;
+if (gameState.buffs.disableDefenseNegation) {
+  // skip element negation logic
+}
+
+
 export function resolveCombat(yokai, playerActions, roundNumber) {
   const yokaiHP = yokai.hp[`r${roundNumber}`];
   const hasWeakAttack =
