@@ -1,10 +1,10 @@
 // spellHand.js
 // Handles spell deck creation and player hand generation
 
-import { spellCatalog } from "../data/spellCatalog.js";
+import { buildStartingDeck } from "./startingDeck.js";
 
 /**
- * Creates a shuffled copy of an array (Fisher-Yates)
+ * Fisher-Yates shuffle
  */
 function shuffle(array) {
   const arr = [...array];
@@ -16,67 +16,39 @@ function shuffle(array) {
 }
 
 /**
- * Builds a full spell deck for a given element
- * @param {string} element - Fire | Ice | Wind | Lightning
- * @returns {Array}
+ * Creates the player's initial deck
  */
-export function buildSpellDeck(element) {
-  const elementSpells = spellCatalog[element];
-
-  if (!elementSpells) {
-    throw new Error(`Unknown spell element: ${element}`);
-  }
-
-  return shuffle([
-    ...elementSpells.attack,
-    ...elementSpells.defense
-  ]);
+export function createPlayerDeck(element) {
+  return shuffle(buildStartingDeck(element));
 }
 
 /**
- * Draws an opening hand for a player
- * @param {string} element
- * @param {number} handSize - default 5
- * @returns {Object}
+ * Generates opening hand
  */
-export function generateSpellHand(element, handSize = 9) {
-  const deck = buildSpellDeck(element);
-
-  if (deck.length < handSize) {
-    throw new Error("Not enough cards to generate hand");
-  }
+export function generateSpellHand(element, handSize = 5) {
+  const deck = createPlayerDeck(element);
 
   return {
     element,
-    deck,
+    deck: deck.slice(handSize),
     hand: deck.slice(0, handSize),
     discard: []
   };
 }
 
 /**
- * Plays a spell card from the hand
- * @param {Object} state
- * @param {number} cardIndex
- * @returns {Object}
+ * Plays a spell
  */
 export function playSpell(state, cardIndex) {
-  const card = state.hand[cardIndex];
+  const card = state.hand.splice(cardIndex, 1)[0];
+  if (!card) throw new Error("Invalid card index");
 
-  if (!card) {
-    throw new Error("Invalid card index");
-  }
-
-  state.hand.splice(cardIndex, 1);
   state.discard.push(card);
-
   return card;
 }
 
 /**
- * Draws back up to hand size
- * @param {Object} state
- * @param {number} handSize
+ * Refill hand
  */
 export function refillHand(state, handSize = 5) {
   while (state.hand.length < handSize && state.deck.length > 0) {
