@@ -59,7 +59,7 @@ export function submitSpells(submittedSpells) {
     gameState.round,
     revealYokaiInfo(
       gameState.currentYokai,
-      gameState.round
+      gameState.day
       )
   );
 
