@@ -5,7 +5,7 @@
 "hp": { "r1": 47, "r2": 51, "r3": 56, "r4": 63 },
 "season": "Summer",
 "area": "Mountain",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -14,7 +14,7 @@
 "hp": { "r1": 44, "r2": 47, "r3": 54, "r4": 59 },
 "season": "Winter",
 "area": "Mountain",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -23,7 +23,7 @@
 "hp": { "r1": 45, "r2": 46, "r3": 53, "r4": 62 },
 "season": "Fall",
 "area": "Mountain",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -32,7 +32,7 @@
 "hp": { "r1": 44, "r2": 51, "r3": 51, "r4": 61 },
 "season": "Spring",
 "area": "Mountain",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -41,7 +41,7 @@
 "hp": { "r1": 44, "r2": 46, "r3": 56, "r4": 63 },
 "season": "Winter",
 "area": "Lake",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -50,7 +50,7 @@
 "hp": { "r1": 43, "r2": 47, "r3": 52, "r4": 59 },
 "season": "Summer",
 "area": "Lake",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -59,7 +59,7 @@
 "hp": { "r1": 45, "r2": 50, "r3": 55, "r4": 61 },
 "season": "Spring",
 "area": "Lake",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -68,7 +68,7 @@
 "hp": { "r1": 46, "r2": 48, "r3": 53, "r4": 58 },
 "season": "Fall",
 "area": "Lake",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -77,7 +77,7 @@
 "hp": { "r1": 42, "r2": 46, "r3": 51, "r4": 58 },
 "season": "Fall",
 "area": "Forest",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -86,7 +86,7 @@
 "hp": { "r1": 45, "r2": 47, "r3": 52, "r4": 61 },
 "season": "Spring",
 "area": "Forest",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -95,7 +95,7 @@
 "hp": { "r1": 47, "r2": 51, "r3": 54, "r4": 61 },
 "season": "Winter",
 "area": "Forest",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -104,7 +104,7 @@
 "hp": { "r1": 45, "r2": 46, "r3": 52, "r4": 59 },
 "season": "Summer",
 "area": "Forest",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -113,7 +113,7 @@
 "hp": { "r1": 43, "r2": 50, "r3": 53, "r4": 58 },
 "season": "Summer",
 "area": "Forest",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -122,7 +122,7 @@
 "hp": { "r1": 47, "r2": 49, "r3": 53, "r4": 63 },
 "season": "Spring",
 "area": "Forest",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -131,7 +131,7 @@
 "hp": { "r1": 45, "r2": 51, "r3": 53, "r4": 62 },
 "season": "Fall",
 "area": "Forest",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -140,7 +140,7 @@
 "hp": { "r1": 47, "r2": 49, "r3": 55, "r4": 63 },
 "season": "Winter",
 "area": "Forest",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -149,7 +149,7 @@
 "hp": { "r1": 44, "r2": 51, "r3": 56, "r4": 58 },
 "season": "Summer",
 "area": "Lake",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -158,7 +158,7 @@
 "hp": { "r1": 46, "r2": 50, "r3": 55, "r4": 62 },
 "season": "Winter",
 "area": "Lake",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -167,7 +167,7 @@
 "hp": { "r1": 42, "r2": 48, "r3": 51, "r4": 59 },
 "season": "Fall",
 "area": "Lake",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -176,7 +176,7 @@
 "hp": { "r1": 42, "r2": 47, "r3": 51, "r4": 59 },
 "season": "Spring",
 "area": "Lake",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -185,7 +185,7 @@
 "hp": { "r1": 44, "r2": 48, "r3": 53, "r4": 60 },
 "season": "Winter",
 "area": "Mountain",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -194,7 +194,7 @@
 "hp": { "r1": 47, "r2": 51, "r3": 53, "r4": 61 },
 "season": "Spring",
 "area": "Mountain",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -203,7 +203,7 @@
 "hp": { "r1": 46, "r2": 48, "r3": 52, "r4": 62 },
 "season": "Summer",
 "area": "Mountain",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -212,7 +212,7 @@
 "hp": { "r1": 45, "r2": 49, "r3": 54, "r4": 63 },
 "season": "Fall",
 "area": "Mountain",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -221,7 +221,7 @@
 "hp": { "r1": 44, "r2": 48, "r3": 53, "r4": 60 },
 "season": "Summer",
 "area": "River",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -230,7 +230,7 @@
 "hp": { "r1": 43, "r2": 49, "r3": 53, "r4": 58 },
 "season": "Winter",
 "area": "River",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -239,7 +239,7 @@
 "hp": { "r1": 46, "r2": 50, "r3": 54, "r4": 63 },
 "season": "Spring",
 "area": "River",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -248,7 +248,7 @@
 "hp": { "r1": 43, "r2": 48, "r3": 54, "r4": 62 },
 "season": "Fall",
 "area": "River",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -257,7 +257,7 @@
 "hp": { "r1": 42, "r2": 47, "r3": 51, "r4": 60 },
 "season": "Spring",
 "area": "Mountain",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -266,7 +266,7 @@
 "hp": { "r1": 43, "r2": 47, "r3": 52, "r4": 59 },
 "season": "Summer",
 "area": "Mountain",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -275,7 +275,7 @@
 "hp": { "r1": 46, "r2": 50, "r3": 55, "r4": 62 },
 "season": "Winter",
 "area": "Mountain",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -284,7 +284,7 @@
 "hp": { "r1": 43, "r2": 47, "r3": 56, "r4": 62 },
 "season": "Fall",
 "area": "Mountain",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -293,7 +293,7 @@
 "hp": { "r1": 44, "r2": 49, "r3": 52, "r4": 62 },
 "season": "Winter",
 "area": "Forest",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -302,7 +302,7 @@
 "hp": { "r1": 46, "r2": 50, "r3": 56, "r4": 59 },
 "season": "Spring",
 "area": "Forest",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -311,7 +311,7 @@
 "hp": { "r1": 45, "r2": 51, "r3": 54, "r4": 63 },
 "season": "Fall",
 "area": "Forest",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -320,7 +320,7 @@
 "hp": { "r1": 43, "r2": 46, "r3": 56, "r4": 60 },
 "season": "Summer",
 "area": "Forest",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -329,7 +329,7 @@
 "hp": { "r1": 43, "r2": 47, "r3": 53, "r4": 60 },
 "season": "Fall",
 "area": "Lake",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -338,7 +338,7 @@
 "hp": { "r1": 47, "r2": 50, "r3": 56, "r4": 62 },
 "season": "Spring",
 "area": "Lake",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -347,7 +347,7 @@
 "hp": { "r1": 46, "r2": 51, "r3": 55, "r4": 63 },
 "season": "Summer",
 "area": "Lake",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -356,7 +356,7 @@
 "hp": { "r1": 47, "r2": 50, "r3": 56, "r4": 60 },
 "season": "Winter",
 "area": "Lake",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -365,7 +365,7 @@
 "hp": { "r1": 45, "r2": 47, "r3": 52, "r4": 61 },
 "season": "Summer",
 "area": "River",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -374,7 +374,7 @@
 "hp": { "r1": 47, "r2": 50, "r3": 52, "r4": 58 },
 "season": "Winter",
 "area": "River",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -383,7 +383,7 @@
 "hp": { "r1": 44, "r2": 49, "r3": 53, "r4": 62 },
 "season": "Fall",
 "area": "River",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -392,7 +392,7 @@
 "hp": { "r1": 42, "r2": 51, "r3": 54, "r4": 61 },
 "season": "Spring",
 "area": "River",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -401,7 +401,7 @@
 "hp": { "r1": 47, "r2": 49, "r3": 54, "r4": 61 },
 "season": "Winter",
 "area": "Mountain",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -410,7 +410,7 @@
 "hp": { "r1": 45, "r2": 46, "r3": 56, "r4": 62 },
 "season": "Summer",
 "area": "Mountain",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -419,7 +419,7 @@
 "hp": { "r1": 44, "r2": 48, "r3": 55, "r4": 60 },
 "season": "Fall",
 "area": "Mountain",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -428,7 +428,7 @@
 "hp": { "r1": 45, "r2": 50, "r3": 56, "r4": 58 },
 "season": "Spring",
 "area": "Mountain",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -437,7 +437,7 @@
 "hp": { "r1": 43, "r2": 47, "r3": 53, "r4": 63 },
 "season": "Fall",
 "area": "Forest",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -446,7 +446,7 @@
 "hp": { "r1": 42, "r2": 48, "r3": 55, "r4": 60 },
 "season": "Winter",
 "area": "Forest",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -455,7 +455,7 @@
 "hp": { "r1": 44, "r2": 48, "r3": 55, "r4": 60 },
 "season": "Spring",
 "area": "Forest",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -464,7 +464,7 @@
 "hp": { "r1": 47, "r2": 46, "r3": 51, "r4": 61 },
 "season": "Summer",
 "area": "Forest",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -473,7 +473,7 @@
 "hp": { "r1": 47, "r2": 48, "r3": 51, "r4": 62 },
 "season": "Summer",
 "area": "River",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -482,7 +482,7 @@
 "hp": { "r1": 46, "r2": 48, "r3": 54, "r4": 61 },
 "season": "Winter",
 "area": "River",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -491,7 +491,7 @@
 "hp": { "r1": 44, "r2": 51, "r3": 54, "r4": 62 },
 "season": "Fall",
 "area": "River",
-"weather": "Night"
+"time": "Night"
 },
 
 {
@@ -500,7 +500,7 @@
 "hp": { "r1": 47, "r2": 47, "r3": 55, "r4": 60 },
 "season": "Spring",
 "area": "River",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -509,7 +509,7 @@
 "hp": { "r1": 44, "r2": 50, "r3": 54, "r4": 58 },
 "season": "Winter",
 "area": "Lake",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -518,7 +518,7 @@
 "hp": { "r1": 47, "r2": 50, "r3": 53, "r4": 61 },
 "season": "Fall",
 "area": "Lake",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -527,7 +527,7 @@
 "hp": { "r1": 42, "r2": 49, "r3": 55, "r4": 61 },
 "season": "Spring",
 "area": "Lake",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -536,7 +536,7 @@
 "hp": { "r1": 46, "r2": 47, "r3": 54, "r4": 60 },
 "season": "Summer",
 "area": "Lake",
-"weather": "Afternoon"
+"time": "Afternoon"
 },
 
 {
@@ -545,7 +545,7 @@
 "hp": { "r1": 42, "r2": 49, "r3": 53, "r4": 61 },
 "season": "Fall",
 "area": "River",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -554,7 +554,7 @@
 "hp": { "r1": 47, "r2": 46, "r3": 55, "r4": 59 },
 "season": "Spring",
 "area": "River",
-"weather": "Dusk"
+"time": "Dusk"
 },
 
 {
@@ -563,7 +563,7 @@
 "hp": { "r1": 45, "r2": 50, "r3": 54, "r4": 60 },
 "season": "Summer",
 "area": "River",
-"weather": "Dawn"
+"time": "Dawn"
 },
 
 {
@@ -572,7 +572,7 @@
 "hp": { "r1": 44, "r2": 51, "r3": 51, "r4": 63 },
 "season": "Winter",
 "area": "River",
-"weather": "Afternoon"
+"time": "Afternoon"
 }
 
 
