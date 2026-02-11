@@ -2,9 +2,10 @@
 
 import { gameState } from "../gameState.js";
 import { selectRandomYokai, loadYokaiEncyclopedia } from "./yokaiSelection.js";
-import { generateSpellHand } from "./spellHand.js";
+import { generateSpellHand, refillHand } from "./spellHand.js";
 import { resolveCombat } from "./combatResolution.js";
 import { applyGuardian } from "./guardians.js";
+
 
 const FINAL_BOSS = {
   name: "Corrupted Kirin",
@@ -190,14 +191,21 @@ export function submitSpells(submittedSpells) {
   
       return; // wait for player to destroy
     }
-  
+
+        // Refill all player hands
+    Object.values(gameState.spellHands).forEach(hand => {
+      refillHand(hand);
+    });
+
     advanceEncounter();
     return;
   }
-
-
-
   // Otherwise combat continues (players pick again)
+  // Combat continues → refill hands
+  Object.values(gameState.spellHands).forEach(hand => {
+    refillHand(hand);
+  });
+
 }
 
 
