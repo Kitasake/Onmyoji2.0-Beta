@@ -146,7 +146,7 @@ export function resolveCombat(yokai, playerActions) {
     }
   }
   
-  const yokaiAttackRoll = rollDice(yokaiAttackDice);
+  const yokaiAttackRoll = rollDice(`${yokaiAttackDice}d6`);
   const yokaiAttackValue = yokaiAttackRoll.total;
 
   // If you later add per-round attack scaling, use:
