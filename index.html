@@ -192,6 +192,8 @@
     import { getShopSpells } from "./logic/shop.js";
     import { advanceDay } from "./gameState.js";
     import { destroyCardEverywhere } from "./logic/spellHand.js";
+    import { spellCatalog } from "./data/spellCatalog.js";
+
 
 
     const difficultyPanel = document.getElementById("difficultyPanel");
@@ -426,6 +428,30 @@ if (selectedIndexes.length === 0) return;
     selected.push(spellIndex);
     renderSpellHands();
   }
+
+  function unlockDivineRadiance() {
+
+    const divineSpell =
+      spellCatalog.Light.attack[0];
+  
+    gameState.players.forEach(player => {
+  
+      const handState =
+        gameState.spellHands[player.id];
+  
+      if (!handState) return;
+  
+      handState.discard.push({
+        ...divineSpell,
+        instanceId: crypto.randomUUID()
+      });
+    });
+  
+    gameState.divineRadianceUnlocked = true;
+  
+    alert("✨ Amaterasu's Divine Radiance has been bestowed upon the Onmyoji!");
+  }
+
 
   
   function renderPartyHP() {
