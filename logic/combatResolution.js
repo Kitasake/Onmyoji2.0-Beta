@@ -79,7 +79,12 @@ export function resolveCombat(yokai, playerActions) {
   // =============================
 
   // Example Yokai attack value
-  const yokaiAttackValue = yokai.attack || 10; 
+  const dayKey = `day${gameState.day}`;
+  const yokaiAttackDice = yokai.attack[dayKey] || 1;
+  
+  const yokaiAttackRoll = rollDice(yokaiAttackDice);
+  const yokaiAttackValue = yokaiAttackRoll.total;
+
   // If you later add per-round attack scaling, use:
   // yokai.attack[`r${round}`]
 
