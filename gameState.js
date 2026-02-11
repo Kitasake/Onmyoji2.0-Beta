@@ -45,6 +45,7 @@ export const gameState = {
   rewardDeck: [],
   rewardDiscard: [],
   pendingReward: null,
+  destroyMode: false,
 
   // COMBAT
   players: [],
@@ -108,6 +109,7 @@ export function initGame(playerCount = 4, options = {}) {
   gameState.rewardDeck = buildRewardDeck();
   gameState.rewardDiscard = [];
   gameState.pendingReward = null;
+  gameState.destroyMode = false;
 
 
   gameState.lastCombatResult = null;
