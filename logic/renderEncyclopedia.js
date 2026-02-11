@@ -25,12 +25,13 @@ export async function renderEncyclopedia() {
       <strong>${knowledge.discovered ? yokai.name : "???"}</strong><br>
       Area: ${knowledge.knownClues.area ? yokai.area : "???"}<br>
       Season: ${knowledge.knownClues.season ? yokai.season : "???"}<br>
-      Weather: ${knowledge.knownClues.weather ? yokai.weather : "???"}<br>
+      Time: ${knowledge.knownClues.time ? yokai.time : "???"}<br>
       <em>HP by Round</em><br>
-      R1: ${knowledge.knownHP.r1 ? yokai.hp.r1 : "???"}<br>
-      R2: ${knowledge.knownHP.r2 ? yokai.hp.r2 : "???"}<br>
-      R3: ${knowledge.knownHP.r3 ? yokai.hp.r3 : "???"}<br>
-      R4: ${knowledge.knownHP.r4 ? yokai.hp.r4 : "???"}
+      Day1: ${knowledge.knownHP.day1 ? yokai.hp.day1 : "???"}<br>
+      Day2: ${knowledge.knownHP.day2 ? yokai.hp.day2 : "???"}<br>
+      Day3: ${knowledge.knownHP.day3 ? yokai.hp.day3 : "???"}<br>
+      Day4: ${knowledge.knownHP.day4 ? yokai.hp.day4 : "???"}
+
     `;
 
     container.appendChild(div);
