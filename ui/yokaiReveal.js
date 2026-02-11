@@ -10,7 +10,7 @@ export function getYokaiClues() {
   const yokai = gameState.currentYokai;
 
   return {
-    round: gameState.round,
+    day: gameState.day,
     season: yokai.season,
     area: yokai.area,
     weather: yokai.weather
@@ -26,6 +26,6 @@ export function getFullYokaiReveal() {
   return {
     name: yokai.name,
     element: yokai.element,
-    hpForRound: yokai.hp[`r${gameState.round}`]
+    hpForDay: yokai.hp[`day${Math.min(gameState.day, 4)}`]
   };
 }
