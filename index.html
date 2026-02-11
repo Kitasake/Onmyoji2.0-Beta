@@ -517,9 +517,11 @@ if (selectedIndexes.length === 0) return;
     }
   
     // Add spell to ALL players of matching element
-    gameState.spellHands[player.id].discard.push({
-      ...spell,
-      instanceId: crypto.randomUUID()
+    gameState.players.forEach(player => {
+      gameState.spellHands[player.id].discard.push({
+        ...spell,
+        instanceId: crypto.randomUUID()
+      });
     });
 
   
