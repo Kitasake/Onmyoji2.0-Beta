@@ -173,17 +173,22 @@ export function submitSpells(submittedSpells) {
 
   // If Yokai is dead, move to next encounter
   if (gameState.currentYokaiHP <= 0) {
-
-    // If reward requires destroy
-    if (gameState.pendingReward?.effect === "destroy") {
-      gameState.destroyMode = true;
-      alert("Choose a card to destroy.");
-      return;
+  
+    // 🔥 TRUE DESTROY HANDLING
+    if (gameState.pendingReward?.destroyCount) {
+  
+      gameState.destroyRemaining =
+        gameState.pendingReward.destroyCount;
+  
+      alert(`Destroy ${gameState.destroyRemaining} card(s).`);
+  
+      return; // wait for player to destroy
     }
   
     advanceEncounter();
     return;
   }
+
 
 
   // Otherwise combat continues (players pick again)
