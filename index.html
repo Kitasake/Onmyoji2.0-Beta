@@ -541,21 +541,33 @@ if (selectedIndexes.length === 0) return;
       .forEach(btn => {
     btn.onclick = async () => {
       const name = btn.dataset.guardian;
-
+    
       applyGuardian(name);
-
+    
+      // Track unique guardian
+      gameState.summonedGuardians.add(name);
+    
+      // 🔥 Check if all 4 summoned
+      if (
+        gameState.summonedGuardians.size === 4 &&
+        !gameState.divineRadianceUnlocked
+      ) {
+        unlockDivineRadiance();
+      }
+    
       document.getElementById("guardianPanel")
         .classList.add("hidden");
-      
+    
       gameState.guardianChoicePending = false;
-      
-      // OPEN SHOP INSTEAD OF ADVANCING DAY
+    
+      // OPEN SHOP
       gameState.shopOpen = true;
       document.getElementById("shopPanel")
         ?.classList.remove("hidden");
-      
+    
       renderShop();
     };
+
   });
 
     document.getElementById("closeShopBtn").onclick = async () => {
