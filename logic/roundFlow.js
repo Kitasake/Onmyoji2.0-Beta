@@ -47,12 +47,19 @@ export function advanceEncounter() {
 
 
 function resolveEndOfDay() {
+
+  // Do not allow guardian on final day
+  if (gameState.isFinalDay) {
+    spawnFinalBoss();
+    return;
+  }
+
   gameState.guardianChoicePending = true;
 
-  // Show Guardian selection first
   document.getElementById("guardianPanel")
     ?.classList.remove("hidden");
 }
+
 
 
 function summonGuardian() {
