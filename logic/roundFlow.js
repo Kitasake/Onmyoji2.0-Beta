@@ -4,7 +4,6 @@ import { gameState } from "../gameState.js";
 import { selectRandomYokai, loadYokaiEncyclopedia } from "./yokaiSelection.js";
 import { generateSpellHand } from "./spellHand.js";
 import { resolveCombat } from "./combatResolution.js";
-import { revealYokaiInfo} from "../data/playerEncyclopedia.js";
 import { applyGuardian } from "./guardians.js";
 
 const FINAL_BOSS = {
