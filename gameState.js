@@ -37,6 +37,7 @@ export const gameState = {
   },
 
   guardianChoicePending: false,
+  shopOpen: false,
 
   rewardDeck: [],
   rewardDiscard: [],
