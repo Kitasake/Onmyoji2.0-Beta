@@ -25,14 +25,14 @@ export async function initPlayerEncyclopedia() {
       knownClues: {
         area: false,
         season: false,
-        weather: false
+        time: false
       },
 
       knownHP: {
-        r1: false,
-        r2: false,
-        r3: false,
-        r4: false
+        day1: false,
+        day2: false,
+        day3: false,
+        day4: false
       }
     };
   });
