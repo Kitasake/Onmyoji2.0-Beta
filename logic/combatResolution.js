@@ -79,8 +79,11 @@ export function resolveCombat(yokai, playerActions) {
   // =============================
 
   // Example Yokai attack value
-  const dayKey = `day${gameState.day}`;
+  const effectiveDay = Math.min(gameState.day, 4);
+  const dayKey = `day${effectiveDay}`;
+  
   const yokaiAttackDice = yokai.attack[dayKey] || 1;
+
   
   const yokaiAttackRoll = rollDice(yokaiAttackDice);
   const yokaiAttackValue = yokaiAttackRoll.total;
