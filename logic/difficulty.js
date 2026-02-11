@@ -1,14 +1,14 @@
 export const DIFFICULTIES = {
   easy: {
-    maxDays: 6,
+    maxDays: 7,
     partyHP: 60
   },
   normal: {
-    maxDays: 5,
+    maxDays: 6,
     partyHP: 60
   },
   hard: {
-    maxDays: 4,
+    maxDays: 5,
     partyHP: 60
   }
 };
