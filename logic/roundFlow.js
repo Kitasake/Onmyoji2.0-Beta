@@ -7,11 +7,35 @@ import { resolveCombat } from "./combatResolution.js";
 import { revealYokaiInfo} from "../data/playerEncyclopedia.js";
 import { applyGuardian } from "./guardians.js";
 
+const FINAL_BOSS = {
+  name: "Corrupted Kirin",
+  element: "Dark",
+  hp: 99,
+  attack: 3,
+  boss: true
+};
 
 const TIMES = ["Dawn", "Afternoon", "Dusk", "Night"];
 
 export function advanceEncounter() {
+
   gameState.encounter++;
+
+  // FINAL DAY LOGIC
+  if (gameState.isFinalDay) {
+
+    // After 3 Yokai → spawn boss
+    if (gameState.encounter === 4) {
+      spawnFinalBoss();
+      return;
+    }
+
+    // After boss defeated
+    if (gameState.encounter > 4) {
+      endGame(true);
+      return;
+    }
+  }
 
   if (gameState.encounter > gameState.maxEncounters) {
     resolveEndOfDay();
@@ -20,6 +44,7 @@ export function advanceEncounter() {
 
   gameState.timeOfDay = TIMES[gameState.encounter - 1];
 }
+
 
 function resolveEndOfDay() {
   gameState.guardianChoicePending = true;
@@ -41,6 +66,17 @@ function summonGuardian() {
   console.log(`Guardian Summoned: ${randomGuardian}`);
 }
 
+function spawnFinalBoss() {
+
+  console.log("Final Boss Appears!");
+
+  gameState.currentYokai = FINAL_BOSS;
+  gameState.currentYokaiHP = FINAL_BOSS.hp;
+
+  gameState.timeOfDay = "Night";
+
+  showCluesOnly();
+}
 
 
 /**
@@ -49,11 +85,33 @@ function summonGuardian() {
 export async function startRound() {
   await loadYokaiEncyclopedia();
   
-  gameState.currentYokai = selectRandomYokai();
-  const effectiveDay = Math.min(gameState.day, 4);
+  // If final day and encounter <= 3 → normal Yokai
+  if (gameState.isFinalDay && gameState.encounter <= 3) {
+  
+    gameState.currentYokai = selectRandomYokai();
+  
+    const effectiveDay = Math.min(gameState.day, 4);
+  
+    gameState.currentYokaiHP =
+      gameState.currentYokai.hp[`day${effectiveDay}`];
+  
+  }
+  // If boss phase
+  else if (gameState.isFinalDay && gameState.encounter === 4) {
+  
+    spawnFinalBoss();
+    return;
+  }
+  else {
+    // Normal day logic
+    gameState.currentYokai = selectRandomYokai();
+  
+    const effectiveDay = Math.min(gameState.day, 4);
+  
+    gameState.currentYokaiHP =
+      gameState.currentYokai.hp[`day${effectiveDay}`];
+  }
 
-  gameState.currentYokaiHP =
-    gameState.currentYokai.hp[`day${effectiveDay}`];
 
 
 
