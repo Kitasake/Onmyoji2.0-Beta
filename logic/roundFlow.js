@@ -22,20 +22,11 @@ export function advanceEncounter() {
 }
 
 function resolveEndOfDay() {
-  // 🎉 Summon a guardian after 4th Yokai
-  summonGuardian();
+  gameState.guardianChoicePending = true;
 
-  gameState.day++;
-
-  if (gameState.day > gameState.maxDays) {
-    endGame(true);
-    return;
-  }
-
-  gameState.encounter = 1;
-  gameState.timeOfDay = "Dawn";
-
-  startRound();
+  // Show UI panel instead of auto-advancing
+  document.getElementById("guardianPanel")
+    ?.classList.remove("hidden");
 }
 
 function summonGuardian() {
