@@ -79,8 +79,7 @@ export async function startRound() {
 export function submitSpells(submittedSpells) {
   const combatResult = resolveCombat(
     gameState.currentYokai,
-    submittedSpells,
-    gameState.encounter
+    submittedSpells
   );
 
   gameState.lastCombatResult = combatResult;
