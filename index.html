@@ -160,6 +160,15 @@
     <button data-guardian="Suzaku">Suzaku – Disable Defense Negation</button>
     <button data-guardian="Seiryu">Seiryu – Gain Random Resources</button>
   </div>
+  <!-- SHOP PANEL -->
+  <div class="panel hidden" id="shopPanel">
+    <h2>Spell Shop</h2>
+  
+    <div id="shopResources"></div>
+    <div id="shopSpells"></div>
+  
+    <button id="closeShopBtn">Start Next Day</button>
+  </div>
 
   <!-- GAME OVER -->
   <div class="panel hidden" id="gameOverPanel">
@@ -180,6 +189,8 @@
     import { renderEncyclopedia } from "./logic/renderEncyclopedia.js";
     import { initPlayerEncyclopedia } from "./data/playerEncyclopedia.js";
     import { applyGuardian } from "./logic/guardians.js";
+    import { getShopSpells } from "./logic/shop.js";
+
 
 
 
@@ -395,6 +406,73 @@ if (selectedIndexes.length === 0) return;
     `${gameState.partyHP} / ${gameState.maxPartyHP}`;
 }
 
+    function renderShop() {
+  const shopSpells = getShopSpells();
+  const container = document.getElementById("shopSpells");
+  const resourceDiv = document.getElementById("shopResources");
+
+  resourceDiv.innerHTML = `
+    <strong>Resources:</strong><br>
+    Fire: ${gameState.resources.Fire} |
+    Ice: ${gameState.resources.Ice} |
+    Lightning: ${gameState.resources.Lightning} |
+    Wind: ${gameState.resources.Wind} |
+    Skin: ${gameState.resources.Skin}
+    <hr>
+  `;
+
+  container.innerHTML = shopSpells.map(spell => {
+    const costText = Object.entries(spell.cost)
+      .map(([res, val]) => `${res}: ${val}`)
+      .join(", ");
+
+    return `
+      <div>
+        <strong>${spell.name}</strong> (${spell.dice})
+        <br>Cost: ${costText}
+        <br>
+        <button data-buy="${spell.name}">
+          Purchase
+        </button>
+        <hr>
+      </div>
+    `;
+  }).join("");
+
+  document.querySelectorAll("[data-buy]").forEach(btn => {
+    btn.onclick = () => buySpell(btn.dataset.buy);
+  });
+}
+
+    function buySpell(spellName) {
+  const shopSpells = getShopSpells();
+  const spell = shopSpells.find(s => s.name === spellName);
+
+  if (!spell) return;
+
+  // Check resources
+  for (const [res, cost] of Object.entries(spell.cost)) {
+    if (gameState.resources[res] < cost) {
+      alert("Not enough resources!");
+      return;
+    }
+  }
+
+  // Deduct resources
+  for (const [res, cost] of Object.entries(spell.cost)) {
+    gameState.resources[res] -= cost;
+  }
+
+  // Add spell to ALL players of matching element
+  gameState.players.forEach(player => {
+    if (player.element === spell.element) {
+      gameState.spellHands[player.id].deck.push({ ...spell });
+    }
+  });
+
+  renderShop();
+}
+
   
     function showGameOverScreen(victory) {
   gamePanel.classList.add("hidden");
@@ -432,21 +510,26 @@ if (selectedIndexes.length === 0) return;
 };
 
     document
-  .querySelectorAll("[data-guardian]")
-  .forEach(btn => {
+      .querySelectorAll("[data-guardian]")
+      .forEach(btn => {
     btn.onclick = async () => {
       const name = btn.dataset.guardian;
 
       applyGuardian(name);
 
-      // Hide guardian panel
       document.getElementById("guardianPanel")
         .classList.add("hidden");
-
+      
       gameState.guardianChoicePending = false;
+      
+      // OPEN SHOP INSTEAD OF ADVANCING DAY
+      gameState.shopOpen = true;
+      document.getElementById("shopPanel")
+        ?.classList.remove("hidden");
+      
+      renderShop();
 
-      // Advance to next day
-      gameState.day++;
+
 
       if (gameState.day > gameState.maxDays) {
         showGameOverScreen(true);
@@ -461,6 +544,26 @@ if (selectedIndexes.length === 0) return;
       renderPartyHP();
     };
   });
+
+    document.getElementById("closeShopBtn").onclick = async () => {
+    document.getElementById("shopPanel").classList.add("hidden");
+  
+    gameState.shopOpen = false;
+  
+    gameState.day++;
+  
+    if (gameState.day > gameState.maxDays) {
+      showGameOverScreen(true);
+      return;
+    }
+  
+    gameState.encounter = 1;
+    gameState.timeOfDay = "Dawn";
+  
+    await startRound();
+    renderRound();
+    renderPartyHP();
+  };
 
 
 
