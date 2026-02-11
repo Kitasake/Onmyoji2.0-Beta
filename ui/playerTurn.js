@@ -11,7 +11,7 @@ export function createPlayerTurn(playerId, spellHand) {
     selectedSpell: null,
 
     selectSpell(spellIndex) {
-      this.selectedSpell = this.spellHand[spellIndex];
+      this.selectedSpell = this.spellHand.hand[spellIndex];
     },
 
     submit() {
