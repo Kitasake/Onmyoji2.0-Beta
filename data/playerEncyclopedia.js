@@ -47,18 +47,22 @@ function savePlayerEncyclopedia() {
   );
 }
 
-export function revealYokaiInfo(yokai, round) {
+export function revealYokaiInfo(yokai, day) {
   const entry = playerEncyclopedia[yokai.name];
   if (!entry) return;
 
   entry.discovered = true;
+
   entry.knownClues.area = true;
   entry.knownClues.season = true;
-  entry.knownClues.weather = true;
-  entry.knownHP[`r${round}`] = true;
+  entry.knownClues.time = true;
+
+  const effectiveDay = Math.min(day, 4);
+  entry.knownHP[`day${effectiveDay}`] = true;
 
   savePlayerEncyclopedia();
 }
+
 
 export function resetPlayerEncyclopedia() {
   localStorage.removeItem(STORAGE_KEY);
