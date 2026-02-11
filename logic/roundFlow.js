@@ -26,7 +26,11 @@ function selectRandomWeather() {
 
 export function advanceEncounter() {
 
+  gameState.currentYokai = null;
+  gameState.currentYokaiHP = 0;
+
   gameState.encounter++;
+
 
   // FINAL DAY LOGIC
   if (gameState.isFinalDay) {
