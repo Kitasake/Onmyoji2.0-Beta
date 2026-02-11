@@ -49,7 +49,11 @@ export function resolveCombat(yokai, playerActions) {
       attackBonusUsed = true;
     }
 
-    const rollResult = rollDice(spell.dice, bonusDice);
+    const rollResult = rollDice(
+      spell.dice + gameState.buffs.attackBonus,
+      bonusDice
+    );
+
 
     totalAttackDamage += rollResult.total;
 
@@ -93,12 +97,20 @@ export function resolveCombat(yokai, playerActions) {
 
     let bonusDice = 0;
 
-    if (qualifiesForElementBonus(spell, yokai) && !defenseBonusUsed) {
+    if (
+      qualifiesForElementBonus(spell, yokai) &&
+      !defenseBonusUsed &&
+      !gameState.buffs.disableDefenseNegation
+    ) {
       bonusDice = 1;
       defenseBonusUsed = true;
     }
 
-    const rollResult = rollDice(spell.dice, bonusDice);
+    const rollResult = rollDice(
+      spell.dice + gameState.buffs.defenseBonus,
+      bonusDice
+    );
+
 
     totalDefense += rollResult.total;
 
