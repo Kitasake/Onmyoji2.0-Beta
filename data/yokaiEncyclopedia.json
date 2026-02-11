@@ -5,7 +5,7 @@
 "hp": { "day1": 47, "day2": 51, "day3": 56, "day4": 63 },
 "season": "Summer",
 "area": "Mountain",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -15,7 +15,7 @@
 "hp": { "day1": 44, "day2": 47, "day3": 54, "day4": 59 },
 "season": "Winter",
 "area": "Mountain",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -25,7 +25,7 @@
 "hp": { "day1": 45, "day2": 46, "day3": 53, "day4": 62 },
 "season": "Fall",
 "area": "Mountain",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -35,7 +35,7 @@
 "hp": { "day1": 44, "day2": 51, "day3": 51, "day4": 61 },
 "season": "Spring",
 "area": "Mountain",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -45,7 +45,7 @@
 "hp": { "day1": 44, "day2": 46, "day3": 56, "day4": 63 },
 "season": "Winter",
 "area": "Lake",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -55,7 +55,7 @@
 "hp": { "day1": 43, "day2": 47, "day3": 52, "day4": 59 },
 "season": "Summer",
 "area": "Lake",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -65,7 +65,7 @@
 "hp": { "day1": 45, "day2": 50, "day3": 55, "day4": 61 },
 "season": "Spring",
 "area": "Lake",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -75,7 +75,7 @@
 "hp": { "day1": 46, "day2": 48, "day3": 53, "day4": 58 },
 "season": "Fall",
 "area": "Lake",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -85,7 +85,7 @@
 "hp": { "day1": 42, "day2": 46, "day3": 51, "day4": 58 },
 "season": "Fall",
 "area": "Forest",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -95,7 +95,7 @@
 "hp": { "day1": 45, "day2": 47, "day3": 52, "day4": 61 },
 "season": "Spring",
 "area": "Forest",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -105,7 +105,7 @@
 "hp": { "day1": 47, "day2": 51, "day3": 54, "day4": 61 },
 "season": "Winter",
 "area": "Forest",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -115,7 +115,7 @@
 "hp": { "day1": 45, "day2": 46, "day3": 52, "day4": 59 },
 "season": "Summer",
 "area": "Forest",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -125,7 +125,7 @@
 "hp": { "day1": 43, "day2": 50, "day3": 53, "day4": 58 },
 "season": "Summer",
 "area": "Forest",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -135,7 +135,7 @@
 "hp": { "day1": 47, "day2": 49, "day3": 53, "day4": 63 },
 "season": "Spring",
 "area": "Forest",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -145,7 +145,7 @@
 "hp": { "day1": 45, "day2": 51, "day3": 53, "day4": 62 },
 "season": "Fall",
 "area": "Forest",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -155,7 +155,7 @@
 "hp": { "day1": 47, "day2": 49, "day3": 55, "day4": 63 },
 "season": "Winter",
 "area": "Forest",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -165,7 +165,7 @@
 "hp": { "day1": 44, "day2": 51, "day3": 56, "day4": 58 },
 "season": "Summer",
 "area": "Lake",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -175,7 +175,7 @@
 "hp": { "day1": 46, "day2": 50, "day3": 55, "day4": 62 },
 "season": "Winter",
 "area": "Lake",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -185,7 +185,7 @@
 "hp": { "day1": 42, "day2": 48, "day3": 51, "day4": 59 },
 "season": "Fall",
 "area": "Lake",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -195,7 +195,7 @@
 "hp": { "day1": 42, "day2": 47, "day3": 51, "day4": 59 },
 "season": "Spring",
 "area": "Lake",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -205,7 +205,7 @@
 "hp": { "day1": 44, "day2": 48, "day3": 53, "day4": 60 },
 "season": "Winter",
 "area": "Mountain",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -215,7 +215,7 @@
 "hp": { "day1": 47, "day2": 51, "day3": 53, "day4": 61 },
 "season": "Spring",
 "area": "Mountain",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -225,7 +225,7 @@
 "hp": { "day1": 46, "day2": 48, "day3": 52, "day4": 62 },
 "season": "Summer",
 "area": "Mountain",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -235,7 +235,7 @@
 "hp": { "day1": 45, "day2": 49, "day3": 54, "day4": 63 },
 "season": "Fall",
 "area": "Mountain",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -245,7 +245,7 @@
 "hp": { "day1": 44, "day2": 48, "day3": 53, "day4": 60 },
 "season": "Summer",
 "area": "River",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -255,7 +255,7 @@
 "hp": { "day1": 43, "day2": 49, "day3": 53, "day4": 58 },
 "season": "Winter",
 "area": "River",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -265,7 +265,7 @@
 "hp": { "day1": 46, "day2": 50, "day3": 54, "day4": 63 },
 "season": "Spring",
 "area": "River",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -275,7 +275,7 @@
 "hp": { "day1": 43, "day2": 48, "day3": 54, "day4": 62 },
 "season": "Fall",
 "area": "River",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -285,7 +285,7 @@
 "hp": { "day1": 42, "day2": 47, "day3": 51, "day4": 60 },
 "season": "Spring",
 "area": "Mountain",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -295,7 +295,7 @@
 "hp": { "day1": 43, "day2": 47, "day3": 52, "day4": 59 },
 "season": "Summer",
 "area": "Mountain",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -305,7 +305,7 @@
 "hp": { "day1": 46, "day2": 50, "day3": 55, "day4": 62 },
 "season": "Winter",
 "area": "Mountain",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -315,7 +315,7 @@
 "hp": { "day1": 43, "day2": 47, "day3": 56, "day4": 62 },
 "season": "Fall",
 "area": "Mountain",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -325,7 +325,7 @@
 "hp": { "day1": 44, "day2": 49, "day3": 52, "day4": 62 },
 "season": "Winter",
 "area": "Forest",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -335,7 +335,7 @@
 "hp": { "day1": 46, "day2": 50, "day3": 56, "day4": 59 },
 "season": "Spring",
 "area": "Forest",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -345,7 +345,7 @@
 "hp": { "day1": 45, "day2": 51, "day3": 54, "day4": 63 },
 "season": "Fall",
 "area": "Forest",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -355,7 +355,7 @@
 "hp": { "day1": 43, "day2": 46, "day3": 56, "day4": 60 },
 "season": "Summer",
 "area": "Forest",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -365,7 +365,7 @@
 "hp": { "day1": 43, "day2": 47, "day3": 53, "day4": 60 },
 "season": "Fall",
 "area": "Lake",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -375,7 +375,7 @@
 "hp": { "day1": 47, "day2": 50, "day3": 56, "day4": 62 },
 "season": "Spring",
 "area": "Lake",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -385,7 +385,7 @@
 "hp": { "day1": 46, "day2": 51, "day3": 55, "day4": 63 },
 "season": "Summer",
 "area": "Lake",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -395,7 +395,7 @@
 "hp": { "day1": 47, "day2": 50, "day3": 56, "day4": 60 },
 "season": "Winter",
 "area": "Lake",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -405,7 +405,7 @@
 "hp": { "day1": 45, "day2": 47, "day3": 52, "day4": 61 },
 "season": "Summer",
 "area": "River",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -415,7 +415,7 @@
 "hp": { "day1": 47, "day2": 50, "day3": 52, "day4": 58 },
 "season": "Winter",
 "area": "River",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -425,7 +425,7 @@
 "hp": { "day1": 44, "day2": 49, "day3": 53, "day4": 62 },
 "season": "Fall",
 "area": "River",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -435,7 +435,7 @@
 "hp": { "day1": 42, "day2": 51, "day3": 54, "day4": 61 },
 "season": "Spring",
 "area": "River",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -445,7 +445,7 @@
 "hp": { "day1": 47, "day2": 49, "day3": 54, "day4": 61 },
 "season": "Winter",
 "area": "Mountain",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -455,7 +455,7 @@
 "hp": { "day1": 45, "day2": 46, "day3": 56, "day4": 62 },
 "season": "Summer",
 "area": "Mountain",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -465,7 +465,7 @@
 "hp": { "day1": 44, "day2": 48, "day3": 55, "day4": 60 },
 "season": "Fall",
 "area": "Mountain",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -475,7 +475,7 @@
 "hp": { "day1": 45, "day2": 50, "day3": 56, "day4": 58 },
 "season": "Spring",
 "area": "Mountain",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -485,7 +485,7 @@
 "hp": { "day1": 43, "day2": 47, "day3": 53, "day4": 63 },
 "season": "Fall",
 "area": "Forest",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -495,7 +495,7 @@
 "hp": { "day1": 42, "day2": 48, "day3": 55, "day4": 60 },
 "season": "Winter",
 "area": "Forest",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -505,7 +505,7 @@
 "hp": { "day1": 44, "day2": 48, "day3": 55, "day4": 60 },
 "season": "Spring",
 "area": "Forest",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -515,7 +515,7 @@
 "hp": { "day1": 47, "day2": 46, "day3": 51, "day4": 61 },
 "season": "Summer",
 "area": "Forest",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -525,7 +525,7 @@
 "hp": { "day1": 47, "day2": 48, "day3": 51, "day4": 62 },
 "season": "Summer",
 "area": "River",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -535,7 +535,7 @@
 "hp": { "day1": 46, "day2": 48, "day3": 54, "day4": 61 },
 "season": "Winter",
 "area": "River",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -545,7 +545,7 @@
 "hp": { "day1": 44, "day2": 51, "day3": 54, "day4": 62 },
 "season": "Fall",
 "area": "River",
-"time": "Night"
+"time": "Night",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -555,7 +555,7 @@
 "hp": { "day1": 47, "day2": 47, "day3": 55, "day4": 60 },
 "season": "Spring",
 "area": "River",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -565,7 +565,7 @@
 "hp": { "day1": 44, "day2": 50, "day3": 54, "day4": 58 },
 "season": "Winter",
 "area": "Lake",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -575,7 +575,7 @@
 "hp": { "day1": 47, "day2": 50, "day3": 53, "day4": 61 },
 "season": "Fall",
 "area": "Lake",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -585,7 +585,7 @@
 "hp": { "day1": 42, "day2": 49, "day3": 55, "day4": 61 },
 "season": "Spring",
 "area": "Lake",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -595,7 +595,7 @@
 "hp": { "day1": 46, "day2": 47, "day3": 54, "day4": 60 },
 "season": "Summer",
 "area": "Lake",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -605,7 +605,7 @@
 "hp": { "day1": 42, "day2": 49, "day3": 53, "day4": 61 },
 "season": "Fall",
 "area": "River",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -615,7 +615,7 @@
 "hp": { "day1": 47, "day2": 46, "day3": 55, "day4": 59 },
 "season": "Spring",
 "area": "River",
-"time": "Dusk"
+"time": "Dusk",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -625,7 +625,7 @@
 "hp": { "day1": 45, "day2": 50, "day3": 54, "day4": 60 },
 "season": "Summer",
 "area": "River",
-"time": "Dawn"
+"time": "Dawn",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 },
 
@@ -635,7 +635,7 @@
 "hp": { "day1": 44, "day2": 51, "day3": 51, "day4": 63 },
 "season": "Winter",
 "area": "River",
-"time": "Afternoon"
+"time": "Afternoon",
 "attack": { "day1": 1d6, "day2": 2d6, "day3": 2d6, "day4": 3d6 },
 }
 
