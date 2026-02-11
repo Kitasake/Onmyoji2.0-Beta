@@ -19,6 +19,19 @@ export function advanceEncounter() {
   gameState.timeOfDay = TIMES[gameState.encounter - 1];
 }
 
+function resolveEndOfDay() {
+  gameState.day++;
+
+  if (gameState.day > gameState.maxDays) {
+    endGame(true);
+    return;
+  }
+
+  gameState.encounter = 1;
+  gameState.timeOfDay = "Dawn";
+
+  startRound();
+}
 
 /**
  * Starts a new round
@@ -63,14 +76,11 @@ export function submitSpells(submittedSpells) {
   gameState.lastCombatResult = combatResult;
   revealCombatResults(combatResult);
 
-  // Apply Yokai attack damage (after defense)
-  let partyDefeated = false;
-
   
 
   showPartyHP();
 
-  if (partyDefeated) {
+  if (gameState.partyHP <= 0) {
     endGame(false);
     return;
   }
@@ -106,11 +116,10 @@ function showCluesOnly() {
 }
 
 function revealCombatResults(combatResult) {
-  console.log("Yokai:", combatResult.yokai);
-  console.log("HP Before:", combatResult.yokaiHP);
-  console.log("Attack:", combatResult.totalAttackDamage);
-  console.log("Defense:", combatResult.totalDefense);
-  console.log("Remaining HP:", combatResult.remainingHP);
+  console.log("Total Attack:", combatResult.totalAttackDamage);
+  console.log("Total Defense:", combatResult.totalDefense);
+  console.log("Yokai Remaining HP:", combatResult.remainingYokaiHP);
+  console.log("Party Remaining HP:", combatResult.remainingPartyHP);
 }
 
 function showPartyHP() {
