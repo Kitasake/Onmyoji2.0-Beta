@@ -73,3 +73,19 @@ export function refillHand(state, handSize = 5) {
   }
 }
 
+export function destroyCardEverywhere(state, instanceId) {
+
+  state.hand = state.hand.filter(
+    c => c.instanceId !== instanceId
+  );
+
+  state.deck = state.deck.filter(
+    c => c.instanceId !== instanceId
+  );
+
+  state.discard = state.discard.filter(
+    c => c.instanceId !== instanceId
+  );
+}
+
+
