@@ -16,6 +16,22 @@ import { drawRewardCard } from "../gameState.js";
  * @returns {Object}
  */
 
+const WEATHER_SPELL_BONUS = {
+  Clear: "Fire",
+  Snowy: "Ice",
+  Rainy: "Lightning",
+  Windy: "Wind"
+};
+
+const WEATHER_YOKAI_EFFECTS = {
+  Clear:   { boost: "Fire", weaken: "Ice" },
+  Snowy:   { boost: "Ice", weaken: "Lightning" },
+  Rainy:   { boost: "Lightning", weaken: "Wind" },
+  Windy:   { boost: "Wind", weaken: "Fire" }
+};
+
+
+
 export function resolveCombat(yokai, playerActions) {
 
   let totalAttackDamage = 0;
@@ -42,10 +58,20 @@ export function resolveCombat(yokai, playerActions) {
       attackBonusUsed = true;
     }
 
+    let weatherBonus = 0;
+
+    if (
+      spell.type === "attack" &&
+      WEATHER_SPELL_BONUS[gameState.currentWeather] === spell.element
+    ) {
+      weatherBonus = 1;
+    }
+    
     const rollResult = rollDice(
-      spell.dice + gameState.buffs.attackBonus,
+      spell.dice + gameState.buffs.attackBonus + weatherBonus,
       bonusDice
     );
+
 
 
     totalAttackDamage += rollResult.total;
@@ -82,13 +108,26 @@ export function resolveCombat(yokai, playerActions) {
   let yokaiAttackDice;
 
   if (yokai.boss) {
-    yokaiAttackDice = yokai.attack; // fixed value (3)
+    yokaiAttackDice = yokai.attack;
   } else {
     const effectiveDay = Math.min(gameState.day, 4);
     const dayKey = `day${effectiveDay}`;
     yokaiAttackDice = yokai.attack[dayKey] || 1;
   }
-
+  
+  // WEATHER MODIFIER
+  const weatherEffect =
+    WEATHER_YOKAI_EFFECTS[gameState.currentWeather];
+  
+  if (weatherEffect) {
+    if (weatherEffect.boost === yokai.element) {
+      yokaiAttackDice += 1;
+    }
+  
+    if (weatherEffect.weaken === yokai.element) {
+      yokaiAttackDice = Math.max(0, yokaiAttackDice - 1);
+    }
+  }
   
   const yokaiAttackRoll = rollDice(yokaiAttackDice);
   const yokaiAttackValue = yokaiAttackRoll.total;
