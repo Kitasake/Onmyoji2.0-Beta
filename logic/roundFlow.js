@@ -5,6 +5,8 @@ import { selectRandomYokai, loadYokaiEncyclopedia } from "./yokaiSelection.js";
 import { generateSpellHand } from "./spellHand.js";
 import { resolveCombat } from "./combatResolution.js";
 import { revealYokaiInfo} from "../data/playerEncyclopedia.js";
+import { applyGuardian } from "./guardians.js";
+
 
 const TIMES = ["Dawn", "Afternoon", "Dusk", "Night"];
 
@@ -20,6 +22,9 @@ export function advanceEncounter() {
 }
 
 function resolveEndOfDay() {
+  // 🎉 Summon a guardian after 4th Yokai
+  summonGuardian();
+
   gameState.day++;
 
   if (gameState.day > gameState.maxDays) {
@@ -32,6 +37,19 @@ function resolveEndOfDay() {
 
   startRound();
 }
+
+function summonGuardian() {
+  const guardians = ["Genbu", "Byakko", "Suzaku", "Seiryu"];
+
+  const randomGuardian =
+    guardians[Math.floor(Math.random() * guardians.length)];
+
+  applyGuardian(randomGuardian);
+
+  console.log(`Guardian Summoned: ${randomGuardian}`);
+}
+
+
 
 /**
  * Starts a new round
