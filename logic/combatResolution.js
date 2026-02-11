@@ -5,6 +5,8 @@ import { rollDice } from "./dice.js";
 import { qualifiesForElementBonus } from "./elementBonus.js";
 import { isWeakAgainst } from "./elementBonus.js";
 import { gameState } from "../gameState.js";
+import { drawRewardCard } from "../gameState.js";
+
 
 /**
  * Resolves combat for a single round
@@ -112,7 +114,9 @@ if (
   const netDamageToYokai = Math.max(0, totalAttackDamage + totalDefense);
   const remainingHP = Math.max(0, yokaiHP - netDamageToYokai);
 
-  
+  if (remainingHP === 0) {
+  drawRewardCard();
+}
 
    
 
