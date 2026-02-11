@@ -66,11 +66,7 @@ export function submitSpells(submittedSpells) {
   // Apply Yokai attack damage (after defense)
   let partyDefeated = false;
 
-  if (combatResult.yokaiAttackDamage > 0) {
-    partyDefeated = resolvePartyDamage(
-      combatResult.yokaiAttackDamage
-    );
-  }
+  
 
   showPartyHP();
 
