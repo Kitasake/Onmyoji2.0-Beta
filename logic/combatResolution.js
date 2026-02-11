@@ -69,10 +69,18 @@ export function resolveCombat(yokai, playerActions) {
       weatherBonus = 1;
     }
     
+    const [count, sides] = spell.dice.split("d").map(Number);
+
+    const totalDice =
+      count +
+      gameState.buffs.attackBonus +
+      weatherBonus;
+    
     const rollResult = rollDice(
-      spell.dice + gameState.buffs.attackBonus + weatherBonus,
+      `${totalDice}d${sides}`,
       bonusDice
     );
+
 
 
 
@@ -160,10 +168,17 @@ export function resolveCombat(yokai, playerActions) {
       defenseBonusUsed = true;
     }
 
+    const [count, sides] = spell.dice.split("d").map(Number);
+
+    const totalDice =
+      count +
+      gameState.buffs.defenseBonus;
+    
     const rollResult = rollDice(
-      spell.dice + gameState.buffs.defenseBonus,
+      `${totalDice}d${sides}`,
       bonusDice
     );
+
 
 
     totalDefense += rollResult.total;
