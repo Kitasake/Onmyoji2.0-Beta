@@ -19,8 +19,16 @@ function shuffle(array) {
  * Creates the player's initial deck
  */
 export function createPlayerDeck(element) {
-  return shuffle(buildStartingDeck(element));
+  const baseDeck = buildStartingDeck(element);
+
+  const deckWithIds = baseDeck.map(card => ({
+    ...card,
+    instanceId: crypto.randomUUID()
+  }));
+
+  return shuffle(deckWithIds);
 }
+
 
 /**
  * Generates opening hand
