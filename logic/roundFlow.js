@@ -119,6 +119,7 @@ export async function startRound() {
   else {
     // Normal day logic
     gameState.currentYokai = selectRandomYokai();
+    gameState.currentWeather = selectRandomWeather();
   
     const effectiveDay = Math.min(gameState.day, 4);
   
