@@ -24,10 +24,11 @@ export function advanceEncounter() {
 function resolveEndOfDay() {
   gameState.guardianChoicePending = true;
 
-  // Show UI panel instead of auto-advancing
+  // Show Guardian selection first
   document.getElementById("guardianPanel")
     ?.classList.remove("hidden");
 }
+
 
 function summonGuardian() {
   const guardians = ["Genbu", "Byakko", "Suzaku", "Seiryu"];
