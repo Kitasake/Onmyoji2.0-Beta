@@ -191,10 +191,7 @@
     import { applyGuardian } from "./logic/guardians.js";
     import { getShopSpells } from "./logic/shop.js";
     import { advanceDay } from "./gameState.js";
-
-
-
-
+    import { destroyCardEverywhere } from "./logic/spellHand.js";
 
 
     const difficultyPanel = document.getElementById("difficultyPanel");
@@ -396,21 +393,29 @@ if (selectedIndexes.length === 0) return;
 
   function selectSpell(playerId, spellIndex) {
 
-    // 🔥 DESTROY MODE
-    if (gameState.destroyMode) {
-  
+    // 🔥 TRUE DESTROY MODE
+    if (gameState.destroyRemaining > 0) {
+    
       const handState = gameState.spellHands[playerId];
-      const [destroyed] = handState.hand.splice(spellIndex, 1);
-  
-      alert(`Destroyed: ${destroyed.name}`);
-  
-      gameState.destroyMode = false;
-      gameState.pendingReward = null;
-  
-      advanceEncounter();
+      const card = handState.hand[spellIndex];
+    
+      if (!card) return;
+    
+      destroyCardEverywhere(handState, card.instanceId);
+    
+      gameState.destroyRemaining--;
+    
+      alert(`Destroyed permanently: ${card.name}`);
+    
+      if (gameState.destroyRemaining === 0) {
+        gameState.pendingReward = null;
+        advanceEncounter();
+      }
+    
       renderRound();
       return;
     }
+
   
     const selected =
       gameState.selectedSpells[playerId] ??= [];
