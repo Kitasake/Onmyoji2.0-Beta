@@ -36,6 +36,8 @@ export const gameState = {
     disableDefenseNegation: false
   },
 
+  guardianChoicePending: false,
+
   rewardDeck: [],
   rewardDiscard: [],
   pendingReward: null,
