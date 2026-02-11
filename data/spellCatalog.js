@@ -209,9 +209,25 @@ export const spellCatalog = {
       cost: { Lightning: 1, Skin: 1 }
     }
   ]
+},
+
+  Light: {
+  attack: [
+    {
+      name: "Amaterasu's Divine Radiance",
+      dice: "3d6",
+      type: "attack",
+      element: "Light",
+      tier: "legendary",
+      startingCopies: 0,
+      cost: null
+    }
+  ],
+  defense: []
 }
 
 };
+
 
 
 
