@@ -15,6 +15,9 @@ export const gameState = {
   encounter: 1,          // 1–4 (or 1–3 on final day)
   maxEncounters: 4,
   timeOfDay: "Dawn",     // Dawn / Afternoon / Dusk / Night
+  
+  // WEATHER
+  currentWeather: null,
 
   // PARTY
   partyHP: 60,
@@ -74,6 +77,7 @@ export function initGame(playerCount = 4, options = {}) {
   gameState.encounter = 1;
   gameState.maxEncounters = 4;
   gameState.timeOfDay = "Dawn";
+  gameState.currentWeather = null;
 
   gameState.partyHP = partyHP;
   gameState.maxPartyHP = partyHP;
