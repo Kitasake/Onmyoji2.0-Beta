@@ -528,20 +528,6 @@ if (selectedIndexes.length === 0) return;
         ?.classList.remove("hidden");
       
       renderShop();
-
-
-
-      if (gameState.day > gameState.maxDays) {
-        showGameOverScreen(true);
-        return;
-      }
-
-      gameState.encounter = 1;
-      gameState.timeOfDay = "Dawn";
-
-      await startRound();
-      renderRound();
-      renderPartyHP();
     };
   });
 
