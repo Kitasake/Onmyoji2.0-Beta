@@ -38,6 +38,8 @@ export const gameState = {
     defenseBonus: 0,
     disableDefenseNegation: false
   },
+  summonedGuardians: new Set(),
+  divineRadianceUnlocked: false,
 
   guardianChoicePending: false,
   shopOpen: false,
@@ -92,6 +94,9 @@ export function initGame(playerCount = 4, options = {}) {
     defenseBonus: 0,
     disableDefenseNegation: false
   };
+  gameState.summonedGuardians = new Set();
+  gameState.divineRadianceUnlocked = false;
+
 
   gameState.players = createPlayers(playerCount);
   gameState.spellHands = {};
