@@ -337,6 +337,7 @@ if (selectedIndexes.length === 0) return;
       clueInfo.innerHTML = `
         Season: ${gameState.currentYokai.season}<br>
         Area: ${gameState.currentYokai.area}<br>
+        Time: ${gameState.timeOfDay}<br>
         Weather: ${gameState.currentYokai.weather}
       `;
 
@@ -404,9 +405,9 @@ if (selectedIndexes.length === 0) return;
     renderSpellHands();
   }
   
-      function renderPartyHP() {
-    document.getElementById("partyHP").textContent =
-      `${gameState.partyHP} / ${gameState.maxPartyHP}`;
+    function renderPartyHP() {
+      document.getElementById("partyHP").textContent =
+        `${gameState.partyHP} / ${gameState.maxPartyHP}`;
   }
 
   function renderShop() {
