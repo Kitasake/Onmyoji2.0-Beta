@@ -199,7 +199,7 @@ function showCluesOnly() {
   console.log("Encounter", gameState.encounter);  
   console.log("Season:", gameState.currentYokai.season);
   console.log("Area:", gameState.currentYokai.area);
-  console.log("Time of Day:", gameState.currentYokai.time);
+  console.log("Time of Day:", gameState.timeOfDay);
   console.log("Weather:", gameState.currentweather);
 }
 
