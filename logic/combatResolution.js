@@ -22,112 +22,109 @@ if (gameState.buffs.disableDefenseNegation) {
 }
 
 
-export function resolveCombat(yokai, playerActions, roundNumber) {
-  const yokaiHP = yokai.hp[`r${roundNumber}`];
-  const hasWeakAttack =
-  gameState.rules.resistancePenalty?.enabled &&
-  playerActions.some(
-    a =>
-      a.spell.type === "attack" &&
-      isWeakAgainst(a.spell.element, yokai.element)
-  );
+export function resolveCombat(yokai, playerActions, roundNumber) export function resolveCombat(yokai, playerActions) {
 
-  let resistanceApplied = false;
   let totalAttackDamage = 0;
   let totalDefense = 0;
+
+  const actionResults = [];
+
   let attackBonusUsed = false;
   let defenseBonusUsed = false;
 
-  const actionResults = [];
+  // =============================
+  // PHASE 1 — PLAYER ATTACK
+  // =============================
 
   playerActions.forEach(action => {
     const { spell } = action;
 
-    const isAttack = spell.type === "attack";
-    const isDefense = spell.type === "defense";
+    if (spell.type !== "attack") return;
 
-    // OPTIONAL RULE #1 — Element-based Defense Restriction
-if (
-  spell.type === "defense" &&
-  gameState.rules.defenseElementRestriction === "match" &&
-  isWeakAgainst(spell.element, yokai.element)
-) {
-  actionResults.push({
-    playerId: action.playerId,
-    spell: spell.name,
-    type: spell.type,
-    ignored: true,
-    reason: "Defense element is weak against Yokai"
-  });
-  return; // skip this spell entirely
-}
-
-    let diceExpression = spell.dice;
     let bonusDice = 0;
-    let penaltyDice = 0;
 
-    // Optional Rule #2 - Attack Resistance (-1 die total)
-    if (
-      spell.type === "attack" &&
-      hasWeakAttack &&
-      !resistanceApplied
-      ) {
-      penaltyDice = 1;
-      resistanceApplied = true;
+    if (qualifiesForElementBonus(spell, yokai) && !attackBonusUsed) {
+      bonusDice = 1;
+      attackBonusUsed = true;
     }
 
-    if (qualifiesForElementBonus(spell, yokai)) {
-      if (spell.type === "attack" && !attackBonusUsed) {
-        bonusDice = 1;
-        attackBonusUsed = true;
-      }
+    const rollResult = rollDice(spell.dice, bonusDice);
 
-      if (spell.type === "defense" && !defenseBonusUsed) {
-        bonusDice = 1;
-        defenseBonusUsed = true;
-      }
-    }
-    
-
-    const rollResult = rollDice(diceExpression, bonusDice - penaltyDice);
-
-    if (isAttack) {
-      totalAttackDamage += rollResult.total;
-    }
-
-    if (isDefense) {
-      totalDefense += rollResult.total;
-    }
+    totalAttackDamage += rollResult.total;
 
     actionResults.push({
       playerId: action.playerId,
       spell: spell.name,
-      type: spell.type,
-      dice: diceExpression,
-      bonusDice,
-      penaltyDice,
+      type: "attack",
       roll: rollResult.rolls,
       total: rollResult.total
     });
   });
 
-  const netDamageToYokai = Math.max(0, totalAttackDamage + totalDefense);
-  const remainingHP = Math.max(0, yokaiHP - netDamageToYokai);
+  gameState.currentYokaiHP -= totalAttackDamage;
 
-  if (remainingHP === 0) {
-  drawRewardCard();
-}
+  if (gameState.currentYokaiHP <= 0) {
+    gameState.currentYokaiHP = 0;
+    drawRewardCard();
 
-   
+    return {
+      defeated: true,
+      phase: "players_win",
+      totalAttackDamage,
+      remainingYokaiHP: 0,
+      actionResults
+    };
+  }
+
+  // =============================
+  // PHASE 2 — YOKAI ATTACK
+  // =============================
+
+  // Example Yokai attack value
+  const yokaiAttackValue = yokai.attack || 10; 
+  // If you later add per-round attack scaling, use:
+  // yokai.attack[`r${round}`]
+
+  playerActions.forEach(action => {
+    const { spell } = action;
+
+    if (spell.type !== "defense") return;
+
+    let bonusDice = 0;
+
+    if (qualifiesForElementBonus(spell, yokai) && !defenseBonusUsed) {
+      bonusDice = 1;
+      defenseBonusUsed = true;
+    }
+
+    const rollResult = rollDice(spell.dice, bonusDice);
+
+    totalDefense += rollResult.total;
+
+    actionResults.push({
+      playerId: action.playerId,
+      spell: spell.name,
+      type: "defense",
+      roll: rollResult.rolls,
+      total: rollResult.total
+    });
+  });
+
+  const damageToParty = Math.max(0, yokaiAttackValue - totalDefense);
+
+  gameState.partyHP -= damageToParty;
+  if (gameState.partyHP < 0) gameState.partyHP = 0;
 
   return {
-    yokai: yokai.name,
-    round: roundNumber,
-    yokaiHP,
+    defeated: false,
+    phase: "yokai_attack",
     totalAttackDamage,
     totalDefense,
-    netDamageToYokai,
-    remainingHP,
+    yokaiAttackValue,
+    damageToParty,
+    remainingYokaiHP: gameState.currentYokaiHP,
+    remainingPartyHP: gameState.partyHP,
     actionResults
   };
 }
+
