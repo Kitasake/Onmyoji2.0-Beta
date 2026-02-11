@@ -16,6 +16,13 @@ const FINAL_BOSS = {
 };
 
 const TIMES = ["Dawn", "Afternoon", "Dusk", "Night"];
+const WEATHER_TYPES = ["Clear", "Snowy", "Rainy", "Windy"];
+
+function selectRandomWeather() {
+  const index = Math.floor(Math.random() * WEATHER_TYPES.length);
+  return WEATHER_TYPES[index];
+}
+
 
 export function advanceEncounter() {
 
@@ -96,6 +103,7 @@ export async function startRound() {
   if (gameState.isFinalDay && gameState.encounter <= 3) {
   
     gameState.currentYokai = selectRandomYokai();
+    gameState.currentWeather = selectRandomWeather();
   
     const effectiveDay = Math.min(gameState.day, 4);
   
@@ -191,7 +199,8 @@ function showCluesOnly() {
   console.log("Encounter", gameState.encounter);  
   console.log("Season:", gameState.currentYokai.season);
   console.log("Area:", gameState.currentYokai.area);
-  console.log("Weather:", gameState.currentYokai.weather);
+  console.log("Time of Day:", gameState.currentYokai.time);
+  console.log("Weather:", gameState.currentweather);
 }
 
 function revealCombatResults(combatResult) {
