@@ -2,7 +2,7 @@
 // Central source of truth for the playtest app
 
 import { createPlayers } from "./logic/playerState.js";
-import { BASE_RULES } from "./logic/rulesets.js";
+import { BASE_RULES, RULES } from "./logic/rulesets.js";
 import { buildRewardDeck } from "./logic/rewardDeck.js";
 
 export const gameState = {
@@ -92,7 +92,12 @@ export function initGame(playerCount = 4, options = {}) {
   gameState.currentYokai = null;
   gameState.currentYokaiHP = 0;
 
-  gameState.rules = { ...BASE_RULES, ...rules };
+  gameState.rules = {
+    ...BASE_RULES,
+    ...RULES.elementalDefense,
+    ...RULES.attackResistanceLite
+  };
+
 
   gameState.rewardDeck = buildRewardDeck();
   gameState.rewardDiscard = [];
