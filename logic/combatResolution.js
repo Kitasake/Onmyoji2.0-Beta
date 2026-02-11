@@ -79,10 +79,15 @@ export function resolveCombat(yokai, playerActions) {
   // =============================
 
   // Example Yokai attack value
-  const effectiveDay = Math.min(gameState.day, 4);
-  const dayKey = `day${effectiveDay}`;
-  
-  const yokaiAttackDice = yokai.attack[dayKey] || 1;
+  let yokaiAttackDice;
+
+  if (yokai.boss) {
+    yokaiAttackDice = yokai.attack; // fixed value (3)
+  } else {
+    const effectiveDay = Math.min(gameState.day, 4);
+    const dayKey = `day${effectiveDay}`;
+    yokaiAttackDice = yokai.attack[dayKey] || 1;
+  }
 
   
   const yokaiAttackRoll = rollDice(yokaiAttackDice);
