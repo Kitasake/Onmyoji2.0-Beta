@@ -163,6 +163,17 @@
 
   
  </div>
+
+  <!-- GUARDIAN SELECTION -->
+  <div class="panel hidden" id="guardianPanel">
+    <h2>Summon a Guardian</h2>
+  
+    <button data-guardian="Genbu">Genbu – +1 Defense Die (Permanent)</button>
+    <button data-guardian="Byakko">Byakko – +1 Attack Die (Permanent)</button>
+    <button data-guardian="Suzaku">Suzaku – Disable Defense Negation</button>
+    <button data-guardian="Seiryu">Seiryu – Gain Random Resources</button>
+  </div>
+
   <!-- GAME OVER -->
   <div class="panel hidden" id="gameOverPanel">
     <h2 id="gameOverTitle"></h2>
@@ -181,6 +192,8 @@
     import { RULES } from "./logic/rulesets.js";
     import { renderEncyclopedia } from "./logic/renderEncyclopedia.js";
     import { initPlayerEncyclopedia } from "./data/playerEncyclopedia.js";
+    import { applyGuardian } from "./logic/guardians.js";
+
 
 function collectRules() {
   const selected = {};
@@ -441,6 +454,37 @@ if (selectedIndexes.length === 0) return;
   // Optional: clear combat text
   document.getElementById("combatResults").textContent = "";
 };
+
+    document
+  .querySelectorAll("[data-guardian]")
+  .forEach(btn => {
+    btn.onclick = async () => {
+      const name = btn.dataset.guardian;
+
+      applyGuardian(name);
+
+      // Hide guardian panel
+      document.getElementById("guardianPanel")
+        .classList.add("hidden");
+
+      gameState.guardianChoicePending = false;
+
+      // Advance to next day
+      gameState.day++;
+
+      if (gameState.day > gameState.maxDays) {
+        showGameOverScreen(true);
+        return;
+      }
+
+      gameState.encounter = 1;
+      gameState.timeOfDay = "Dawn";
+
+      await startRound();
+      renderRound();
+      renderPartyHP();
+    };
+  });
 
 
 
