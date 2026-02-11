@@ -15,6 +15,7 @@ import { drawRewardCard } from "../gameState.js";
  * @param {number} roundNumber
  * @returns {Object}
  */
+//Buffs from summoned guardian
 const attackBonus = gameState.buffs.attackBonus;
 const defenseBonus = gameState.buffs.defenseBonus;
 if (gameState.buffs.disableDefenseNegation) {
