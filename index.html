@@ -338,7 +338,7 @@ if (selectedIndexes.length === 0) return;
         Season: ${gameState.currentYokai.season}<br>
         Area: ${gameState.currentYokai.area}<br>
         Time: ${gameState.timeOfDay}<br>
-        Weather: ${gameState.currentYokai.weather}
+        Weather: ${gameState.currentWeather}
       `;
 
       renderSpellHands();
@@ -395,8 +395,25 @@ if (selectedIndexes.length === 0) return;
 
 
   function selectSpell(playerId, spellIndex) {
+
+    // 🔥 DESTROY MODE
+    if (gameState.destroyMode) {
+  
+      const handState = gameState.spellHands[playerId];
+      const [destroyed] = handState.hand.splice(spellIndex, 1);
+  
+      alert(`Destroyed: ${destroyed.name}`);
+  
+      gameState.destroyMode = false;
+      gameState.pendingReward = null;
+  
+      advanceEncounter();
+      renderRound();
+      return;
+    }
+  
     const selected =
-    gameState.selectedSpells[playerId] ??= [];
+      gameState.selectedSpells[playerId] ??= [];
   
     if (selected.length >= 3) return;
     if (selected.includes(spellIndex)) return;
@@ -404,10 +421,11 @@ if (selectedIndexes.length === 0) return;
     selected.push(spellIndex);
     renderSpellHands();
   }
+
   
-    function renderPartyHP() {
-      document.getElementById("partyHP").textContent =
-        `${gameState.partyHP} / ${gameState.maxPartyHP}`;
+  function renderPartyHP() {
+    document.getElementById("partyHP").textContent =
+      `${gameState.partyHP} / ${gameState.maxPartyHP}`;
   }
 
   function renderShop() {
