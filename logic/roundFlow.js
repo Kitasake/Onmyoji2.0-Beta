@@ -101,16 +101,19 @@ export async function startRound() {
   
   // If final day and encounter <= 3 → normal Yokai
   if (gameState.isFinalDay && gameState.encounter <= 3) {
+
+    if (!gameState.currentYokai) {
   
-    gameState.currentYokai = selectRandomYokai();
-    gameState.currentWeather = selectRandomWeather();
+      gameState.currentYokai = selectRandomYokai();
+      gameState.currentWeather = selectRandomWeather();
   
-    const effectiveDay = Math.min(gameState.day, 4);
+      const effectiveDay = Math.min(gameState.day, 4);
   
-    gameState.currentYokaiHP =
-      gameState.currentYokai.hp[`day${effectiveDay}`];
-  
+      gameState.currentYokaiHP =
+        gameState.currentYokai.hp[`day${effectiveDay}`];
+    }
   }
+
   // If boss phase
   else if (gameState.isFinalDay && gameState.encounter === 4) {
   
@@ -118,15 +121,19 @@ export async function startRound() {
     return;
   }
   else {
-    // Normal day logic
-    gameState.currentYokai = selectRandomYokai();
-    gameState.currentWeather = selectRandomWeather();
+  // Only select a new Yokai if none exists
+    if (!gameState.currentYokai) {
   
-    const effectiveDay = Math.min(gameState.day, 4);
+      gameState.currentYokai = selectRandomYokai();
+      gameState.currentWeather = selectRandomWeather();
   
-    gameState.currentYokaiHP =
-      gameState.currentYokai.hp[`day${effectiveDay}`];
+      const effectiveDay = Math.min(gameState.day, 4);
+  
+      gameState.currentYokaiHP =
+        gameState.currentYokai.hp[`day${effectiveDay}`];
+    }
   }
+
 
 
 
