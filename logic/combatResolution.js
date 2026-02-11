@@ -22,7 +22,7 @@ if (gameState.buffs.disableDefenseNegation) {
 }
 
 
-export function resolveCombat(yokai, playerActions, roundNumber) export function resolveCombat(yokai, playerActions) {
+export function resolveCombat(yokai, playerActions) {
 
   let totalAttackDamage = 0;
   let totalDefense = 0;
