@@ -43,6 +43,7 @@ export const gameState = {
   // COMBAT
   players: [],
   currentYokai: null,
+  currentYokaiHP: 0,
 
   spellHands: {},
   selectedSpells: {},
@@ -87,6 +88,7 @@ export function initGame(playerCount = 4, options = {}) {
   gameState.spellHands = {};
   gameState.selectedSpells = {};
   gameState.currentYokai = null;
+  gameState.currentYokaiHP = 0;
 
   gameState.rules = { ...BASE_RULES, ...rules };
 
