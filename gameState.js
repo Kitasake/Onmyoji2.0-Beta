@@ -53,7 +53,7 @@ export const gameState = {
   players: [],
   currentYokai: null,
   currentYokaiHP: 0,
-  currentWeather: null,
+
 
   spellHands: {},
   selectedSpells: {},
