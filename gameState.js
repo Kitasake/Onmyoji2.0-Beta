@@ -69,6 +69,7 @@ export function initGame(playerCount = 4, options = {}) {
   gameState.day = 1;
   gameState.maxDays = maxDays;
   gameState.isFinalDay = false;
+  gameState.maxEncounters = 4;
 
   gameState.encounter = 1;
   gameState.maxEncounters = 4;
@@ -145,4 +146,29 @@ export function drawRewardCard() {
 
   return card;
 }
+
+/**
+ * Advances to the next day
+ */
+export function advanceDay() {
+
+  gameState.day++;
+
+  // Reset encounter counter
+  gameState.encounter = 1;
+
+  // Check for final day
+  if (gameState.day === gameState.maxDays) {
+    gameState.isFinalDay = true;
+    gameState.maxEncounters = 3; // Final day has 3 Yokai before boss
+  } else {
+    gameState.isFinalDay = false;
+    gameState.maxEncounters = 4;
+  }
+
+  gameState.timeOfDay = "Dawn";
+
+  console.log(`Starting Day ${gameState.day}`);
+}
+
 
