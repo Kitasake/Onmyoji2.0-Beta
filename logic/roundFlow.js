@@ -27,6 +27,7 @@ export async function startRound() {
   await loadYokaiEncyclopedia();
   
   gameState.currentYokai = selectRandomYokai();
+  gameState.currentYokaiHP = gameState.currentYokai.hp[`r${gameState.encounter}`];
 
 
   // Generate spell hand per player
@@ -56,22 +57,19 @@ export function submitSpells(submittedSpells) {
   const combatResult = resolveCombat(
     gameState.currentYokai,
     submittedSpells,
-    gameState.round,
-    revealYokaiInfo(
-      gameState.currentYokai,
-      gameState.day
-      )
+    gameState.encounter
   );
 
   gameState.lastCombatResult = combatResult;
   revealCombatResults(combatResult);
 
-  const partyDamage = combatResult.remainingHP;
-
+  // Apply Yokai attack damage (after defense)
   let partyDefeated = false;
-  
-  if (partyDamage > 0) {
-    partyDefeated = resolvePartyDamage(partyDamage);
+
+  if (combatResult.yokaiAttackDamage > 0) {
+    partyDefeated = resolvePartyDamage(
+      combatResult.yokaiAttackDamage
+    );
   }
 
   showPartyHP();
@@ -81,13 +79,15 @@ export function submitSpells(submittedSpells) {
     return;
   }
 
-  if (gameState.round >= gameState.maxRounds) {
-    endGame(true);
+  // If Yokai is dead, move to next encounter
+  if (gameState.currentYokaiHP <= 0) {
+    advanceEncounter();
     return;
   }
 
-  advanceRound();
+  // Otherwise combat continues (players pick again)
 }
+
 
 /**
  * Ends the game
