@@ -6,6 +6,7 @@ import { qualifiesForElementBonus } from "./elementBonus.js";
 import { isWeakAgainst } from "./elementBonus.js";
 import { gameState } from "../gameState.js";
 import { drawRewardCard } from "../gameState.js";
+import { grantYokaiRewards } from "./rewards.js";
 
 
 /**
@@ -88,10 +89,16 @@ export function resolveCombat(yokai, playerActions) {
   gameState.currentYokaiHP -= totalAttackDamage;
 
   if (gameState.currentYokaiHP <= 0) {
-    gameState.currentYokaiHP = 0;
-    drawRewardCard();
+  gameState.currentYokaiHP = 0;
 
-    return {
+  // 🔥 Grant elemental + skin resources
+  if (!yokai.boss) {
+    grantYokaiRewards(yokai);
+  }
+
+  drawRewardCard();
+
+  return {
       defeated: true,
       phase: "players_win",
       totalAttackDamage,
