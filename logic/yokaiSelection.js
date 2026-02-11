@@ -37,11 +37,11 @@ export function selectRandomYokai() {
  * @param {number} round - 1 to 4
  * @returns {number}
  */
-export function getYokaiHPForRound(yokai, round) {
-  if (!yokai.hp || !yokai.hp[`r${round}`]) {
-    throw new Error(`Invalid round ${round} for yokai ${yokai.name}`);
+export function getYokaiHPForDay(yokai, day) {
+  if (!yokai.hp || !yokai.hp[`day${day}`]) {
+    throw new Error(`Invalid day ${day} for yokai ${yokai.name}`);
   }
-  return yokai.hp[`r${round}`];
+  return yokai.hp[`day${day}`];
 }
 
 /**
@@ -65,11 +65,11 @@ export function getYokaiClues(yokai, round) {
  * @param {number} round
  * @returns {Object}
  */
-export function getFullYokaiReveal(yokai, round) {
+export function getFullYokaiReveal(yokai, day) {
   return {
     name: yokai.name,
     element: yokai.element,
-    hp: getYokaiHPForRound(yokai, round),
+    hp: getYokaiHPForRound(yokai, day),
     season: yokai.season,
     area: yokai.area,
     weather: yokai.weather
