@@ -6,7 +6,7 @@
 "season": "Summer",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -16,7 +16,7 @@
 "season": "Winter",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -26,7 +26,7 @@
 "season": "Fall",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -36,7 +36,7 @@
 "season": "Spring",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -46,7 +46,7 @@
 "season": "Winter",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -56,7 +56,7 @@
 "season": "Summer",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -66,7 +66,7 @@
 "season": "Spring",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -76,7 +76,7 @@
 "season": "Fall",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -86,7 +86,7 @@
 "season": "Fall",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -96,7 +96,7 @@
 "season": "Spring",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -106,7 +106,7 @@
 "season": "Winter",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -116,7 +116,7 @@
 "season": "Summer",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -126,7 +126,7 @@
 "season": "Summer",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -136,7 +136,7 @@
 "season": "Spring",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -146,7 +146,7 @@
 "season": "Fall",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -156,7 +156,7 @@
 "season": "Winter",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -166,7 +166,7 @@
 "season": "Summer",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -176,7 +176,7 @@
 "season": "Winter",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -186,7 +186,7 @@
 "season": "Fall",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -196,7 +196,7 @@
 "season": "Spring",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -206,7 +206,7 @@
 "season": "Winter",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -216,7 +216,7 @@
 "season": "Spring",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -226,7 +226,7 @@
 "season": "Summer",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -236,7 +236,7 @@
 "season": "Fall",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -246,7 +246,7 @@
 "season": "Summer",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -256,7 +256,7 @@
 "season": "Winter",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -266,7 +266,7 @@
 "season": "Spring",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -276,7 +276,7 @@
 "season": "Fall",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -286,7 +286,7 @@
 "season": "Spring",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -296,7 +296,7 @@
 "season": "Summer",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -306,7 +306,7 @@
 "season": "Winter",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -316,7 +316,7 @@
 "season": "Fall",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -326,7 +326,7 @@
 "season": "Winter",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -336,7 +336,7 @@
 "season": "Spring",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -346,7 +346,7 @@
 "season": "Fall",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -356,7 +356,7 @@
 "season": "Summer",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -366,7 +366,7 @@
 "season": "Fall",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -376,7 +376,7 @@
 "season": "Spring",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -386,7 +386,7 @@
 "season": "Summer",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -396,7 +396,7 @@
 "season": "Winter",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -406,7 +406,7 @@
 "season": "Summer",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -416,7 +416,7 @@
 "season": "Winter",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -426,7 +426,7 @@
 "season": "Fall",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -436,7 +436,7 @@
 "season": "Spring",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -446,7 +446,7 @@
 "season": "Winter",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -456,7 +456,7 @@
 "season": "Summer",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -466,7 +466,7 @@
 "season": "Fall",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -476,7 +476,7 @@
 "season": "Spring",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -486,7 +486,7 @@
 "season": "Fall",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -496,7 +496,7 @@
 "season": "Winter",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -506,7 +506,7 @@
 "season": "Spring",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -516,7 +516,7 @@
 "season": "Summer",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -526,7 +526,7 @@
 "season": "Summer",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -536,7 +536,7 @@
 "season": "Winter",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -546,7 +546,7 @@
 "season": "Fall",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -556,7 +556,7 @@
 "season": "Spring",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -566,7 +566,7 @@
 "season": "Winter",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -576,7 +576,7 @@
 "season": "Fall",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -586,7 +586,7 @@
 "season": "Spring",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -596,7 +596,7 @@
 "season": "Summer",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -606,7 +606,7 @@
 "season": "Fall",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -616,7 +616,7 @@
 "season": "Spring",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -626,7 +626,7 @@
 "season": "Summer",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 },
 
 {
@@ -636,7 +636,7 @@
 "season": "Winter",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 },
+"attack": { "day1": 1, "day2": 2, "day3": 2, "day4": 3 }
 }
 
 
