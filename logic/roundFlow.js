@@ -50,7 +50,7 @@ export async function startRound() {
   await loadYokaiEncyclopedia();
   
   gameState.currentYokai = selectRandomYokai();
-  gameState.currentYokaiHP = gameState.currentYokai.hp[`r${gameState.encounter}`];
+  gameState.currentYokaiHP = gameState.currentYokai.hp[`r${gameState.day}`];
 
 
   // Generate spell hand per player
