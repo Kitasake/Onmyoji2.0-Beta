@@ -157,6 +157,12 @@ export function submitSpells(submittedSpells) {
     gameState.currentYokai,
     submittedSpells
   );
+  gameState.currentYokaiHP =
+  combatResult.remainingYokaiHP;
+
+  gameState.partyHP =
+  combatResult.remainingPartyHP;
+
 
   gameState.lastCombatResult = combatResult;
   revealCombatResults(combatResult);
