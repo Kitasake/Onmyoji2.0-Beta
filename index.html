@@ -466,7 +466,7 @@ if (selectedIndexes.length === 0) return;
   // Add spell to ALL players of matching element
   gameState.players.forEach(player => {
     if (player.element === spell.element) {
-      gameState.spellHands[player.id].deck.push({ ...spell });
+      gameState.spellHands[player.id].discard.push({ ...spell });
     }
   });
 
