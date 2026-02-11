@@ -4,6 +4,7 @@
 import { rollDice } from "./dice.js";
 import { qualifiesForElementBonus } from "./elementBonus.js";
 import { isWeakAgainst } from "./elementBonus.js";
+import { revealYokaiInfo } from "../data/playerEncyclopedia.js";
 import { gameState } from "../gameState.js";
 import { drawRewardCard } from "../gameState.js";
 import { grantYokaiRewards } from "./rewards.js";
@@ -90,6 +91,7 @@ export function resolveCombat(yokai, playerActions) {
 
   if (gameState.currentYokaiHP <= 0) {
   gameState.currentYokaiHP = 0;
+    revealYokaiInfo(gameState.currentYokai, gameState.day);
 
   // 🔥 Grant elemental + skin resources
   if (!yokai.boss) {
