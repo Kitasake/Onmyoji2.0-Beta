@@ -26,7 +26,7 @@ export async function renderEncyclopedia() {
       Area: ${knowledge.knownClues.area ? yokai.area : "???"}<br>
       Season: ${knowledge.knownClues.season ? yokai.season : "???"}<br>
       Time: ${knowledge.knownClues.time ? yokai.time : "???"}<br>
-      <em>HP by Round</em><br>
+      <em>HP by Day</em><br>
       Day1: ${knowledge.knownHP.day1 ? yokai.hp.day1 : "???"}<br>
       Day2: ${knowledge.knownHP.day2 ? yokai.hp.day2 : "???"}<br>
       Day3: ${knowledge.knownHP.day3 ? yokai.hp.day3 : "???"}<br>
