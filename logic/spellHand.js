@@ -51,7 +51,17 @@ export function playSpell(state, cardIndex) {
  * Refill hand
  */
 export function refillHand(state, handSize = 5) {
-  while (state.hand.length < handSize && state.deck.length > 0) {
+  while (state.hand.length < handSize) {
+
+    // If deck empty, reshuffle discard
+    if (state.deck.length === 0) {
+      if (state.discard.length === 0) break;
+
+      state.deck = shuffle(state.discard);
+      state.discard = [];
+    }
+
     state.hand.push(state.deck.shift());
   }
 }
+
