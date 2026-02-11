@@ -69,7 +69,7 @@ export function getFullYokaiReveal(yokai, day) {
   return {
     name: yokai.name,
     element: yokai.element,
-    hp: getYokaiHPForRound(yokai, day),
+    hp: getYokaiHPForDay(yokai, day),
     season: yokai.season,
     area: yokai.area,
     weather: yokai.weather
