@@ -13,7 +13,7 @@ export function createSpellSelection(spellHand) {
 
     getSelectedSpell() {
       if (selectedIndex === null) return null;
-      return spellHand[selectedIndex];
+      return spellHand.hand[selectedIndex];
     },
 
     isSelected() {
