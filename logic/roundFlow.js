@@ -50,7 +50,11 @@ export async function startRound() {
   await loadYokaiEncyclopedia();
   
   gameState.currentYokai = selectRandomYokai();
-  gameState.currentYokaiHP = gameState.currentYokai.hp[`r${gameState.day}`];
+  const effectiveDay = Math.min(gameState.day, 4);
+
+  gameState.currentYokaiHP =
+    gameState.currentYokai.hp[`day${effectiveDay}`];
+
 
 
   // Generate spell hand per player
@@ -118,7 +122,8 @@ function endGame(victory) {
  * UI HOOKS (to be implemented in HTML)
  */
 function showCluesOnly() {
-  console.log("Round", gameState.round);
+  console.log("Day", gameState.day);
+  console.log("Encounter", gameState.encounter);  
   console.log("Season:", gameState.currentYokai.season);
   console.log("Area:", gameState.currentYokai.area);
   console.log("Weather:", gameState.currentYokai.weather);
