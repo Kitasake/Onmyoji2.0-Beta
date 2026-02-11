@@ -115,9 +115,7 @@ export function initGame(playerCount = 4, options = {}) {
 /**
  * Advances the round counter
  */
-export function advanceRound() {
-  gameState.round += 1;
-}
+
 
 /**
  * Applies overflow damage from combat to players
