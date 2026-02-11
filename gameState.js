@@ -147,9 +147,16 @@ export function resolvePartyDamage(damage) {
  * Draws a single reward card after a Yokai is defeated
  */
 export function drawRewardCard() {
+
   if (gameState.rewardDeck.length === 0) {
-    console.warn("Reward deck is empty");
-    return null;
+    if (gameState.rewardDiscard.length === 0) {
+      console.warn("Reward deck empty");
+      return null;
+    }
+
+    gameState.rewardDeck =
+      shuffle(gameState.rewardDiscard);
+    gameState.rewardDiscard = [];
   }
 
   const card = gameState.rewardDeck.shift();
@@ -157,6 +164,7 @@ export function drawRewardCard() {
 
   return card;
 }
+
 
 /**
  * Advances to the next day
