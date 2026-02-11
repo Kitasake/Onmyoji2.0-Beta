@@ -82,20 +82,7 @@
   <button data-difficulty="normal">Normal</button>
   <button data-difficulty="hard">Hard</button>
 
-  <hr>
-
-  <h3> Optional Rules</h3>
   
-  <label>
-  <input type="checkbox" data-rule="elementalDefense" />
-  Element-based Defense Only
-</label>
-<br>
-  
-<label>
-  <input type="checkbox" data-rule="attackResistanceLite" />
-  Attack Resistance (−1 die)
-</label>
 </div>
 
  <div id="gamePanel" class="hidden"> 
@@ -195,17 +182,7 @@
     import { applyGuardian } from "./logic/guardians.js";
 
 
-function collectRules() {
-  const selected = {};
 
-  document
-    .querySelectorAll("[data-rule]:checked")
-    .forEach(input => {
-      Object.assign(selected, RULES[input.dataset.rule]);
-    });
-
-  return selected;
-}
 
 
     const difficultyPanel = document.getElementById("difficultyPanel");
@@ -224,7 +201,6 @@ difficultyPanel
       initGame(4, {
         partyHP: difficulty.partyHP,
         maxDays: difficulty.maxDays,
-        rules: collectRules()
       });
 
   await initPlayerEncyclopedia();   
