@@ -10,8 +10,8 @@ import { applyGuardian } from "./guardians.js";
 const FINAL_BOSS = {
   name: "Corrupted Kirin",
   element: "Dark",
-  hp: 160,
-  attack: 8,
+  hp: 180,
+  attack: 9,
   boss: true
 };
 
