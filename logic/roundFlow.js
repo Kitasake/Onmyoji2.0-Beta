@@ -120,10 +120,13 @@ export async function startRound() {
 
   // If boss phase
   else if (gameState.isFinalDay && gameState.encounter === 4) {
+
+    if (!gameState.currentYokai) {
+      spawnFinalBoss();
+    }
   
-    spawnFinalBoss();
-    return;
   }
+
   else {
   // Only select a new Yokai if none exists
     if (!gameState.currentYokai) {
