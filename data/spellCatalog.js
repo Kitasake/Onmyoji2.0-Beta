@@ -9,7 +9,7 @@ export const spellCatalog = {
         type: "attack",
         element: "Fire",
         tier: "basic",
-        startingCopies: 3,
+        startingCopies: 6,
         cost: null
       },
       {
@@ -18,7 +18,7 @@ export const spellCatalog = {
         type: "attack",
         element: "Fire",
         tier: "advanced",
-        startingCopies: 2,
+        startingCopies: 0,
         cost: { Fire: 2, Skin: 2 }
       },
       {
@@ -38,7 +38,7 @@ export const spellCatalog = {
         type: "defense",
         element: "Fire",
         tier: "basic",
-        startingCopies: 3,
+        startingCopies: 4,
         cost: null
       },
       {
@@ -47,7 +47,7 @@ export const spellCatalog = {
         type: "defense",
         element: "Fire",
         tier: "advanced",
-        startingCopies: 2,
+        startingCopies: 0,
         cost: { Fire: 1, Skin: 1 }
       }
     ]
@@ -61,7 +61,7 @@ export const spellCatalog = {
       type: "attack",
       element: "Ice",
       tier: "basic",
-      startingCopies: 3,
+      startingCopies: 6,
       cost: null
     },
     {
@@ -70,7 +70,7 @@ export const spellCatalog = {
       type: "attack",
       element: "Ice",
       tier: "advanced",
-      startingCopies: 2,
+      startingCopies: 0,
       cost: { Ice: 2, Skin: 2 }
     },
     {
@@ -90,7 +90,7 @@ export const spellCatalog = {
       type: "defense",
       element: "Ice",
       tier: "basic",
-      startingCopies: 3,
+      startingCopies: 4,
       cost: null
     },
     {
@@ -99,7 +99,7 @@ export const spellCatalog = {
       type: "defense",
       element: "Ice",
       tier: "advanced",
-      startingCopies: 2,
+      startingCopies: 0,
       cost: { Ice: 1, Skin: 1 }
     }
   ]
@@ -114,7 +114,7 @@ export const spellCatalog = {
       type: "attack",
       element: "Wind",
       tier: "basic",
-      startingCopies: 3,
+      startingCopies: 6,
       cost: null
     },
     {
@@ -123,7 +123,7 @@ export const spellCatalog = {
       type: "attack",
       element: "Wind",
       tier: "advanced",
-      startingCopies: 2,
+      startingCopies: 0,
       cost: { Wind: 2, Skin: 2 }
     },
     {
@@ -143,7 +143,7 @@ export const spellCatalog = {
       type: "defense",
       element: "Wind",
       tier: "basic",
-      startingCopies: 3,
+      startingCopies: 4,
       cost: null
     },
     {
@@ -152,7 +152,7 @@ export const spellCatalog = {
       type: "defense",
       element: "Wind",
       tier: "advanced",
-      startingCopies: 2,
+      startingCopies: 0,
       cost: { Wind: 1, Skin: 1 }
     }
   ]
@@ -167,7 +167,7 @@ export const spellCatalog = {
       type: "attack",
       element: "Lightning",
       tier: "basic",
-      startingCopies: 3,
+      startingCopies: 6,
       cost: null
     },
     {
@@ -176,7 +176,7 @@ export const spellCatalog = {
       type: "attack",
       element: "Lightning",
       tier: "advanced",
-      startingCopies: 2,
+      startingCopies: 0,
       cost: { Lightning: 2, Skin: 2 }
     },
     {
@@ -196,7 +196,7 @@ export const spellCatalog = {
       type: "defense",
       element: "Lightning",
       tier: "basic",
-      startingCopies: 3,
+      startingCopies: 4,
       cost: null
     },
     {
@@ -205,7 +205,7 @@ export const spellCatalog = {
       type: "defense",
       element: "Lightning",
       tier: "advanced",
-      startingCopies: 2,
+      startingCopies: 0,
       cost: { Lightning: 1, Skin: 1 }
     }
   ]
@@ -227,6 +227,7 @@ export const spellCatalog = {
 }
 
 };
+
 
 
 
