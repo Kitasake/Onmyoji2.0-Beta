@@ -1,642 +1,643 @@
 [
-  {
+ {
 "name": "Red Oni",
 "element": "Fire",
-"hp": { "day1": 47, "day2": 51, "day3": 56, "day4": 63 },
+"hp": { "day1": 47, "day2": 58, "day3": 70, "day4": 84 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Oni",
 "element": "Ice",
-"hp": { "day1": 44, "day2": 47, "day3": 54, "day4": 59 },
+"hp": { "day1": 44, "day2": 54, "day3": 68, "day4": 80 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Oni",
 "element": "Lightning",
-"hp": { "day1": 45, "day2": 46, "day3": 53, "day4": 62 },
+"hp": { "day1": 45, "day2": 53, "day3": 67, "day4": 83 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Oni",
 "element": "Wind",
-"hp": { "day1": 44, "day2": 51, "day3": 51, "day4": 61 },
+"hp": { "day1": 44, "day2": 58, "day3": 65, "day4": 82 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Kappa",
 "element": "Fire",
-"hp": { "day1": 44, "day2": 46, "day3": 56, "day4": 63 },
+"hp": { "day1": 44, "day2": 53, "day3": 70, "day4": 84 },
 "season": "Winter",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Kappa",
 "element": "Ice",
-"hp": { "day1": 43, "day2": 47, "day3": 52, "day4": 59 },
+"hp": { "day1": 43, "day2": 54, "day3": 66, "day4": 80 },
 "season": "Summer",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Kappa",
 "element": "Lightning",
-"hp": { "day1": 45, "day2": 50, "day3": 55, "day4": 61 },
+"hp": { "day1": 45, "day2": 57, "day3": 69, "day4": 82 },
 "season": "Spring",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Kappa",
 "element": "Wind",
-"hp": { "day1": 46, "day2": 48, "day3": 53, "day4": 58 },
+"hp": { "day1": 46, "day2": 55, "day3": 67, "day4": 79 },
 "season": "Fall",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Tsuchiguma",
 "element": "Fire",
-"hp": { "day1": 42, "day2": 46, "day3": 51, "day4": 58 },
+"hp": { "day1": 42, "day2": 53, "day3": 65, "day4": 79 },
 "season": "Fall",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Tsuchiguma",
 "element": "Ice",
-"hp": { "day1": 45, "day2": 47, "day3": 52, "day4": 61 },
+"hp": { "day1": 45, "day2": 54, "day3": 66, "day4": 82 },
 "season": "Spring",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Tsuchiguma",
 "element": "Lightning",
-"hp": { "day1": 47, "day2": 51, "day3": 54, "day4": 61 },
+"hp": { "day1": 47, "day2": 58, "day3": 68, "day4": 82 },
 "season": "Winter",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Tsuchiguma",
 "element": "Wind",
-"hp": { "day1": 45, "day2": 46, "day3": 52, "day4": 59 },
+"hp": { "day1": 45, "day2": 53, "day3": 66, "day4": 80 },
 "season": "Summer",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Itachi",
 "element": "Fire",
-"hp": { "day1": 43, "day2": 50, "day3": 53, "day4": 58 },
+"hp": { "day1": 43, "day2": 57, "day3": 67, "day4": 79 },
 "season": "Summer",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Itachi",
 "element": "Ice",
-"hp": { "day1": 47, "day2": 49, "day3": 53, "day4": 63 },
+"hp": { "day1": 47, "day2": 56, "day3": 67, "day4": 84 },
 "season": "Spring",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Itachi",
 "element": "Lightning",
-"hp": { "day1": 45, "day2": 51, "day3": 53, "day4": 62 },
+"hp": { "day1": 45, "day2": 58, "day3": 67, "day4": 83 },
 "season": "Fall",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Itachi",
 "element": "Wind",
-"hp": { "day1": 47, "day2": 49, "day3": 55, "day4": 63 },
+"hp": { "day1": 47, "day2": 56, "day3": 69, "day4": 84 },
 "season": "Winter",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Yuki Onna",
 "element": "Fire",
-"hp": { "day1": 44, "day2": 51, "day3": 56, "day4": 58 },
+"hp": { "day1": 44, "day2": 58, "day3": 70, "day4": 79 },
 "season": "Summer",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Yuki Onna",
 "element": "Ice",
-"hp": { "day1": 46, "day2": 50, "day3": 55, "day4": 62 },
+"hp": { "day1": 46, "day2": 57, "day3": 69, "day4": 83 },
 "season": "Winter",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Yuki Onna",
 "element": "Lightning",
-"hp": { "day1": 42, "day2": 48, "day3": 51, "day4": 59 },
+"hp": { "day1": 42, "day2": 55, "day3": 65, "day4": 80 },
 "season": "Fall",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Yuki Onna",
 "element": "Wind",
-"hp": { "day1": 42, "day2": 47, "day3": 51, "day4": 59 },
+"hp": { "day1": 42, "day2": 54, "day3": 65, "day4": 80 },
 "season": "Spring",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
-},
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
+}
+
 
 {
 "name": "Red Tengu",
 "element": "Fire",
-"hp": { "day1": 44, "day2": 48, "day3": 53, "day4": 60 },
+"hp": { "day1": 44, "day2": 55, "day3": 67, "day4": 81 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Tengu",
 "element": "Ice",
-"hp": { "day1": 47, "day2": 51, "day3": 53, "day4": 61 },
+"hp": { "day1": 47, "day2": 58, "day3": 67, "day4": 82 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Tengu",
 "element": "Lightning",
-"hp": { "day1": 46, "day2": 48, "day3": 52, "day4": 62 },
+"hp": { "day1": 46, "day2": 55, "day3": 66, "day4": 83 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Tengu",
 "element": "Wind",
-"hp": { "day1": 45, "day2": 49, "day3": 54, "day4": 63 },
+"hp": { "day1": 45, "day2": 56, "day3": 68, "day4": 84 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Bakaneko",
 "element": "Fire",
-"hp": { "day1": 44, "day2": 48, "day3": 53, "day4": 60 },
+"hp": { "day1": 44, "day2": 55, "day3": 67, "day4": 81 },
 "season": "Summer",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Bakaneko",
 "element": "Ice",
-"hp": { "day1": 43, "day2": 49, "day3": 53, "day4": 58 },
+"hp": { "day1": 43, "day2": 56, "day3": 67, "day4": 79 },
 "season": "Winter",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Bakaneko",
 "element": "Lightning",
-"hp": { "day1": 46, "day2": 50, "day3": 54, "day4": 63 },
+"hp": { "day1": 46, "day2": 57, "day3": 68, "day4": 84 },
 "season": "Spring",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Bakaneko",
 "element": "Wind",
-"hp": { "day1": 43, "day2": 48, "day3": 54, "day4": 62 },
+"hp": { "day1": 43, "day2": 55, "day3": 68, "day4": 83 },
 "season": "Fall",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Nue",
 "element": "Fire",
-"hp": { "day1": 42, "day2": 47, "day3": 51, "day4": 60 },
+"hp": { "day1": 42, "day2": 54, "day3": 65, "day4": 81 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Nue",
 "element": "Ice",
-"hp": { "day1": 43, "day2": 47, "day3": 52, "day4": 59 },
+"hp": { "day1": 43, "day2": 54, "day3": 66, "day4": 80 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Nue",
 "element": "Lightning",
-"hp": { "day1": 46, "day2": 50, "day3": 55, "day4": 62 },
+"hp": { "day1": 46, "day2": 57, "day3": 69, "day4": 83 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Nue",
 "element": "Wind",
-"hp": { "day1": 43, "day2": 47, "day3": 56, "day4": 62 },
+"hp": { "day1": 43, "day2": 54, "day3": 70, "day4": 83 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Tanuki",
 "element": "Fire",
-"hp": { "day1": 44, "day2": 49, "day3": 52, "day4": 62 },
+"hp": { "day1": 44, "day2": 56, "day3": 66, "day4": 83 },
 "season": "Winter",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Blue Tanuki",
 "element": "Ice",
-"hp": { "day1": 46, "day2": 50, "day3": 56, "day4": 59 },
+"hp": { "day1": 46, "day2": 57, "day3": 70, "day4": 80 },
 "season": "Spring",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Yellow Tanuki",
 "element": "Lightning",
-"hp": { "day1": 45, "day2": 51, "day3": 54, "day4": 63 },
+"hp": { "day1": 45, "day2": 58, "day3": 68, "day4": 84 },
 "season": "Fall",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Green Tanuki",
 "element": "Wind",
-"hp": { "day1": 43, "day2": 46, "day3": 56, "day4": 60 },
+"hp": { "day1": 43, "day2": 53, "day3": 70, "day4": 81 },
 "season": "Summer",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
-},
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
+}
 
 {
 "name": "Red Kitsune",
 "element": "Fire",
-"hp": { "day1": 43, "day2": 47, "day3": 53, "day4": 60 },
+"hp": { "day1": 43, "day2": 54, "day3": 67, "day4": 81 },
 "season": "Fall",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Kitsune",
 "element": "Ice",
-"hp": { "day1": 47, "day2": 50, "day3": 56, "day4": 62 },
+"hp": { "day1": 47, "day2": 57, "day3": 70, "day4": 83 },
 "season": "Spring",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Kitsune",
 "element": "Lightning",
-"hp": { "day1": 46, "day2": 51, "day3": 55, "day4": 63 },
+"hp": { "day1": 46, "day2": 58, "day3": 69, "day4": 84 },
 "season": "Summer",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Kitsune",
 "element": "Wind",
-"hp": { "day1": 47, "day2": 50, "day3": 56, "day4": 60 },
+"hp": { "day1": 47, "day2": 57, "day3": 70, "day4": 81 },
 "season": "Winter",
 "area": "Lake",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Red Nuraryhon",
 "element": "Fire",
-"hp": { "day1": 45, "day2": 47, "day3": 52, "day4": 61 },
+"hp": { "day1": 45, "day2": 54, "day3": 66, "day4": 82 },
 "season": "Summer",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Nuraryhon",
 "element": "Ice",
-"hp": { "day1": 47, "day2": 50, "day3": 52, "day4": 58 },
+"hp": { "day1": 47, "day2": 57, "day3": 66, "day4": 79 },
 "season": "Winter",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Nuraryhon",
 "element": "Lightning",
-"hp": { "day1": 44, "day2": 49, "day3": 53, "day4": 62 },
+"hp": { "day1": 44, "day2": 56, "day3": 67, "day4": 83 },
 "season": "Fall",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Nuraryhon",
 "element": "Wind",
-"hp": { "day1": 42, "day2": 51, "day3": 54, "day4": 61 },
+"hp": { "day1": 42, "day2": 58, "day3": 68, "day4": 82 },
 "season": "Spring",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Red Obariyon",
 "element": "Fire",
-"hp": { "day1": 47, "day2": 49, "day3": 54, "day4": 61 },
+"hp": { "day1": 47, "day2": 56, "day3": 68, "day4": 82 },
 "season": "Winter",
 "area": "Mountain",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Obariyon",
 "element": "Ice",
-"hp": { "day1": 45, "day2": 46, "day3": 56, "day4": 62 },
+"hp": { "day1": 45, "day2": 53, "day3": 70, "day4": 83 },
 "season": "Summer",
 "area": "Mountain",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Obariyon",
 "element": "Lightning",
-"hp": { "day1": 44, "day2": 48, "day3": 55, "day4": 60 },
+"hp": { "day1": 44, "day2": 55, "day3": 69, "day4": 81 },
 "season": "Fall",
 "area": "Mountain",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Obariyon",
 "element": "Wind",
-"hp": { "day1": 45, "day2": 50, "day3": 56, "day4": 58 },
+"hp": { "day1": 45, "day2": 57, "day3": 70, "day4": 79 },
 "season": "Spring",
 "area": "Mountain",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
-},
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
+}
 
 {
 "name": "Red Gashadokuro",
 "element": "Fire",
-"hp": { "day1": 43, "day2": 47, "day3": 53, "day4": 63 },
+"hp": { "day1": 43, "day2": 54, "day3": 67, "day4": 84 },
 "season": "Fall",
 "area": "Forest",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Gashadokuro",
 "element": "Ice",
-"hp": { "day1": 42, "day2": 48, "day3": 55, "day4": 60 },
+"hp": { "day1": 42, "day2": 55, "day3": 69, "day4": 81 },
 "season": "Winter",
 "area": "Forest",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Gashadokuro",
 "element": "Lightning",
-"hp": { "day1": 44, "day2": 48, "day3": 55, "day4": 60 },
+"hp": { "day1": 44, "day2": 55, "day3": 69, "day4": 81 },
 "season": "Spring",
 "area": "Forest",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Gashadokuro",
 "element": "Wind",
-"hp": { "day1": 47, "day2": 46, "day3": 51, "day4": 61 },
+"hp": { "day1": 47, "day2": 53, "day3": 65, "day4": 82 },
 "season": "Summer",
 "area": "Forest",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Red Gyuuki",
 "element": "Fire",
-"hp": { "day1": 47, "day2": 48, "day3": 51, "day4": 62 },
+"hp": { "day1": 47, "day2": 55, "day3": 65, "day4": 83 },
 "season": "Summer",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Gyuuki",
 "element": "Ice",
-"hp": { "day1": 46, "day2": 48, "day3": 54, "day4": 61 },
+"hp": { "day1": 46, "day2": 55, "day3": 68, "day4": 82 },
 "season": "Winter",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Gyuuki",
 "element": "Lightning",
-"hp": { "day1": 44, "day2": 51, "day3": 54, "day4": 62 },
+"hp": { "day1": 44, "day2": 58, "day3": 68, "day4": 83 },
 "season": "Fall",
 "area": "River",
 "time": "Night",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Gyuuki",
 "element": "Wind",
-"hp": { "day1": 47, "day2": 47, "day3": 55, "day4": 60 },
+"hp": { "day1": 47, "day2": 54, "day3": 69, "day4": 81 },
 "season": "Spring",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Red Omukade",
 "element": "Fire",
-"hp": { "day1": 44, "day2": 50, "day3": 54, "day4": 58 },
+"hp": { "day1": 44, "day2": 57, "day3": 68, "day4": 79 },
 "season": "Winter",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Omukade",
 "element": "Ice",
-"hp": { "day1": 47, "day2": 50, "day3": 53, "day4": 61 },
+"hp": { "day1": 47, "day2": 57, "day3": 67, "day4": 82 },
 "season": "Fall",
 "area": "Lake",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Omukade",
 "element": "Lightning",
-"hp": { "day1": 42, "day2": 49, "day3": 55, "day4": 61 },
+"hp": { "day1": 42, "day2": 56, "day3": 69, "day4": 82 },
 "season": "Spring",
 "area": "Lake",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Omukade",
 "element": "Wind",
-"hp": { "day1": 46, "day2": 47, "day3": 54, "day4": 60 },
+"hp": { "day1": 46, "day2": 54, "day3": 68, "day4": 81 },
 "season": "Summer",
 "area": "Lake",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
 },
 
 {
 "name": "Red Nure Onna",
 "element": "Fire",
-"hp": { "day1": 42, "day2": 49, "day3": 53, "day4": 61 },
+"hp": { "day1": 42, "day2": 56, "day3": 67, "day4": 82 },
 "season": "Fall",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Blue Nure Onna",
 "element": "Ice",
-"hp": { "day1": 47, "day2": 46, "day3": 55, "day4": 59 },
+"hp": { "day1": 47, "day2": 53, "day3": 69, "day4": 80 },
 "season": "Spring",
 "area": "River",
 "time": "Dusk",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Yellow Nure Onna",
 "element": "Lightning",
-"hp": { "day1": 45, "day2": 50, "day3": 54, "day4": 60 },
+"hp": { "day1": 45, "day2": 57, "day3": 68, "day4": 81 },
 "season": "Summer",
 "area": "River",
 "time": "Dawn",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 },
 
 {
 "name": "Green Nure Onna",
 "element": "Wind",
-"hp": { "day1": 44, "day2": 51, "day3": 51, "day4": 63 },
+"hp": { "day1": 44, "day2": 58, "day3": 65, "day4": 84 },
 "season": "Winter",
 "area": "River",
 "time": "Afternoon",
-"attack": { "day1": 2, "day2": 3, "day3": 3, "day4": 4 }
+"attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 }
 
 
