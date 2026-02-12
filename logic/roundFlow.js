@@ -188,9 +188,20 @@ export function submitSpells(submittedSpells) {
   showPartyHP();
 
   if (gameState.partyHP <= 0) {
-    endGame(false);
+
+  // FINAL DAY = TRUE DEFEAT
+    if (gameState.isFinalDay) {
+      endGame(false);
+      return;
+    }
+  
+    // NOT FINAL DAY = DAY ENDS
+    console.log("Party defeated — ending day.");
+  
+    handlePartyDefeat();
     return;
   }
+
 
   // If Yokai is dead, move to next encounter
   if (gameState.currentYokaiHP <= 0) {
@@ -222,6 +233,27 @@ export function submitSpells(submittedSpells) {
 
 }
 
+function handlePartyDefeat() {
+
+  // Restore party HP for next day
+  gameState.partyHP = gameState.maxPartyHP;
+
+  // Clear current encounter
+  gameState.currentYokai = null;
+  gameState.currentYokaiHP = 0;
+
+  // Skip guardian phase on defeat
+  gameState.guardianChoicePending = false;
+
+  // Open shop immediately
+  gameState.shopOpen = true;
+
+  document.getElementById("guardianPanel")
+    ?.classList.add("hidden");
+
+  document.getElementById("shopPanel")
+    ?.classList.remove("hidden");
+}
 
 /**
  * Ends the game
