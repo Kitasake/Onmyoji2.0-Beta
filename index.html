@@ -326,22 +326,31 @@ if (selectedIndexes.length === 0) return;
     function renderRound() {
       roundInfo.textContent =
         `Day ${gameState.day} – Encounter ${gameState.encounter}`;
-
-
+    
       if (!gameState.currentYokai) {
         clueInfo.textContent = "Yokai not initialized.";
         return;
       }
-
+    
+      let yokaiInfoHTML = "";
+      if (gameState.currentYokaiRevealed) {
+        yokaiInfoHTML = `
+          <strong>Yokai:</strong> ${gameState.currentYokai.name} <br>
+          <strong>Max HP:</strong> ${gameState.currentYokai.hp[`day${Math.min(gameState.day,4)}`]} <br><br>
+        `;
+      }
+    
       clueInfo.innerHTML = `
+        ${yokaiInfoHTML}
         Season: ${gameState.currentYokai.season}<br>
         Area: ${gameState.currentYokai.area}<br>
         Time: ${gameState.timeOfDay}<br>
         Weather: ${gameState.currentWeather}
       `;
-
+    
       renderSpellHands();
     }
+
 
   function renderSpellHands() {
     const container = document.getElementById("spellHands");
