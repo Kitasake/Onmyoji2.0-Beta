@@ -114,7 +114,8 @@ function spawnFinalBoss() {
  */
 export async function startRound() {
   await loadYokaiEncyclopedia();
-  
+  gameState.currentYokaiRevealed = false;
+
   // If final day and encounter <= 3 → normal Yokai
   if (gameState.isFinalDay && gameState.encounter <= 3) {
 
