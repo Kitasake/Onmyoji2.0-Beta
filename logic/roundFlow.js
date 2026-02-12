@@ -190,9 +190,13 @@ export function submitSpells(submittedSpells) {
 
   gameState.partyHP =
   combatResult.remainingPartyHP;
-
-
   gameState.lastCombatResult = combatResult;
+
+  // Reveal Yokai if not defeated
+  if (gameState.currentYokaiHP > 0) {
+    gameState.currentYokaiRevealed = true;
+  }
+  
   revealCombatResults(combatResult);
 
   
