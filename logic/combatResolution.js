@@ -43,6 +43,8 @@ export function resolveCombat(yokai, playerActions) {
 
   let attackBonusUsed = false;
   let defenseBonusUsed = false;
+  let weatherBonusUsed = false;  
+
 
   // =============================
   // PHASE 1 — PLAYER ATTACK
@@ -64,10 +66,13 @@ export function resolveCombat(yokai, playerActions) {
 
     if (
       spell.type === "attack" &&
-      WEATHER_SPELL_BONUS[gameState.currentWeather] === spell.element
+      WEATHER_SPELL_BONUS[gameState.currentWeather] === spell.element &&
+      !weatherBonusUsed
     ) {
       weatherBonus = 1;
+      weatherBonusUsed = true;  // ← ensures only 1 bonus per turn
     }
+
     
     const [count, sides] = spell.dice.split("d").map(Number);
 
