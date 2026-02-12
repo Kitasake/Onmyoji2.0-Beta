@@ -197,8 +197,7 @@
 "area": "Lake",
 "time": "Afternoon",
 "attack": { "day1": 3, "day2": 4, "day3": 5, "day4": 6 }
-}
-
+},
 
 {
 "name": "Red Tengu",
@@ -639,6 +638,4 @@
 "time": "Afternoon",
 "attack" : { "day1" : 3, "day2" : 4, "day3" : 5, "day4" : 6}
 }
-
-
 ]
