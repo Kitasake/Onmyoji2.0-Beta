@@ -518,11 +518,16 @@ if (selectedIndexes.length === 0) return;
   
     // Add spell to ALL players of matching element
     gameState.players.forEach(player => {
+
+      if (player.element !== spell.element) return;
+    
       gameState.spellHands[player.id].discard.push({
         ...spell,
         instanceId: crypto.randomUUID()
       });
+    
     });
+
 
   
     renderShop();
