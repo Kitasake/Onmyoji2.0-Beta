@@ -59,7 +59,6 @@ export function advanceEncounter() {
 
 function resolveEndOfDay() {
 
-  // Do not allow guardian on final day
   if (gameState.isFinalDay) {
     spawnFinalBoss();
     return;
@@ -67,9 +66,22 @@ function resolveEndOfDay() {
 
   gameState.guardianChoicePending = true;
 
-  document.getElementById("guardianPanel")
-    ?.classList.remove("hidden");
+  const panel = document.getElementById("guardianPanel");
+  panel?.classList.remove("hidden");
+
+  // 🔥 HIDE already summoned guardians
+  panel?.querySelectorAll("[data-guardian]").forEach(btn => {
+    const name = btn.dataset.guardian;
+
+    if (gameState.summonedGuardians.has(name)) {
+      btn.disabled = true;
+      btn.textContent += " (Already Summoned)";
+    } else {
+      btn.style.display = "block";
+    }
+  });
 }
+
 
 
 
