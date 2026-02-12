@@ -109,12 +109,14 @@ export function resolveCombat(yokai, playerActions) {
   drawRewardCard();
 
   return {
-      defeated: true,
-      phase: "players_win",
-      totalAttackDamage,
-      remainingYokaiHP: 0,
-      actionResults
-    };
+    defeated: true,
+    phase: "players_win",
+    totalAttackDamage,
+    remainingYokaiHP: 0,
+    remainingPartyHP: gameState.partyHP, // ✅ ADD THIS
+    actionResults
+  };
+
   }
 
   // =============================
