@@ -43,7 +43,7 @@ export function resolveCombat(yokai, playerActions) {
 
   let attackBonusUsed = false;
   let defenseBonusUsed = false;
-  let weatherBonusUsed = false;  
+  
 
 
   // =============================
@@ -61,25 +61,12 @@ export function resolveCombat(yokai, playerActions) {
       bonusDice = 1;
       attackBonusUsed = true;
     }
-
-    let weatherBonus = 0;
-
-    if (
-      spell.type === "attack" &&
-      WEATHER_SPELL_BONUS[gameState.currentWeather] === spell.element &&
-      !weatherBonusUsed
-    ) {
-      weatherBonus = 1;
-      weatherBonusUsed = true;  // ← ensures only 1 bonus per turn
-    }
-
     
     const [count, sides] = spell.dice.split("d").map(Number);
 
     let totalDice =
       count +
-      gameState.buffs.attackBonus +
-      weatherBonus;
+      gameState.buffs.attackBonus;
     
     // 🔥 PERMANENT RULE:
     // Remove 1 die if NOT weak against Yokai
@@ -92,9 +79,10 @@ export function resolveCombat(yokai, playerActions) {
       `${totalDice}d${sides}`,
       bonusDice
     );
-
-
-
+    // WEATHER: +1 to final result if element matches weather
+    if (WEATHER_SPELL_BONUS[gameState.currentWeather] === spell.element) {
+      rollResult.total += 1;
+    }
 
     totalAttackDamage += rollResult.total;
 
