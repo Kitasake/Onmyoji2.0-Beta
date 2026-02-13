@@ -117,6 +117,11 @@ function spawnFinalBoss() {
 export async function startRound() {
   await loadYokaiEncyclopedia();
   gameState.round++;
+   
+  // Reveal Yokai if not defeated
+  if (gameState.round >= 2 && gameState.currentYokaiHP > 0) {
+    gameState.currentYokaiRevealed = true;
+  }
 
   // If final day and encounter <= 3 → normal Yokai
   if (gameState.isFinalDay && gameState.encounter <= 3) {
@@ -195,10 +200,7 @@ export function submitSpells(submittedSpells) {
   combatResult.remainingPartyHP;
   gameState.lastCombatResult = combatResult;
 
-  // Reveal Yokai if not defeated
-  if (gameState.round >= 2 && gameState.currentYokaiHP > 0) {
-    gameState.currentYokaiRevealed = true;
-  }
+
   
   revealCombatResults(combatResult);
 
