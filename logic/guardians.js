@@ -13,8 +13,8 @@ export function applyGuardian(name) {
       break;
     case "Seiryu":
       ["Fire","Ice","Lightning","Wind","Skin"].forEach(
-        r => gameState.resources[r] += Math.ceil(Math.random() * 3)
+        r => gameState.resources[r] += 3
       );
       break;
+    }
   }
-}
