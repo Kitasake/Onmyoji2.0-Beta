@@ -59,6 +59,7 @@ export const gameState = {
   spellHands: {},
   selectedSpells: {},
 
+  round: 0,
   lastCombatResult: null,
   rules: {},
 
