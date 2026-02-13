@@ -26,6 +26,8 @@ function selectRandomWeather() {
 
 export function advanceEncounter() {
 
+  gameState.round = 0;
+  gameState.currentYokaiRevealed = false;
   gameState.currentYokai = null;
   gameState.currentYokaiHP = 0;
 
@@ -114,7 +116,7 @@ function spawnFinalBoss() {
  */
 export async function startRound() {
   await loadYokaiEncyclopedia();
-  gameState.currentYokaiRevealed = false;
+  gameState.round++;
 
   // If final day and encounter <= 3 → normal Yokai
   if (gameState.isFinalDay && gameState.encounter <= 3) {
@@ -194,7 +196,7 @@ export function submitSpells(submittedSpells) {
   gameState.lastCombatResult = combatResult;
 
   // Reveal Yokai if not defeated
-  if (gameState.currentYokaiHP > 0) {
+  if (gameState.round >= 2 && gameState.currentYokaiHP > 0) {
     gameState.currentYokaiRevealed = true;
   }
   
