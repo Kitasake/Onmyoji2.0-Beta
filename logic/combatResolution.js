@@ -76,10 +76,17 @@ export function resolveCombat(yokai, playerActions) {
     
     const [count, sides] = spell.dice.split("d").map(Number);
 
-    const totalDice =
+    let totalDice =
       count +
       gameState.buffs.attackBonus +
       weatherBonus;
+    
+    // 🔥 PERMANENT RULE:
+    // Remove 1 die if NOT weak against Yokai
+    if (!isWeakAgainst(spell.element, yokai.element)) {
+      totalDice = Math.max(1, totalDice - 1);
+    }
+
     
     const rollResult = rollDice(
       `${totalDice}d${sides}`,
@@ -161,8 +168,13 @@ export function resolveCombat(yokai, playerActions) {
 
   playerActions.forEach(action => {
     const { spell } = action;
-
+  
     if (spell.type !== "defense") return;
+  
+    // 🔥 PERMANENT RULE:
+    // Defense only works if element isn't weak to the Yokai
+    if (isWeakAgainst(spell.element, yokai.element)) return;
+
 
     let bonusDice = 0;
 
