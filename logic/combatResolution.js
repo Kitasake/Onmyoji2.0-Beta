@@ -158,18 +158,22 @@ export function resolveCombat(yokai, playerActions) {
     const { spell } = action;
   
     if (spell.type !== "defense") return;
-  
-    // 🔥 PERMANENT RULE:
-    // Defense only works if element isn't weak to the Yokai
-    if (isWeakAgainst(spell.element, yokai.element)) return;
+
+    // Weakness rule only applies if negation is NOT disabled
+    if (
+      !gameState.buffs.disableDefenseNegation &&
+      isWeakAgainst(spell.element, yokai.element)
+    ) {
+      return;
+    }
+
 
 
     let bonusDice = 0;
 
     if (
       qualifiesForElementBonus(spell, yokai) &&
-      !defenseBonusUsed &&
-      !gameState.buffs.disableDefenseNegation
+      !defenseBonusUsed
     ) {
       bonusDice = 1;
       defenseBonusUsed = true;
